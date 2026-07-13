@@ -7,6 +7,31 @@
 
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+  /* ---------- Theme toggle (light / dark) + image swap ---------- */
+  var root = document.documentElement;
+
+  function swapThemedImages() {
+    var theme = root.getAttribute('data-theme') || 'dark';
+    document.querySelectorAll('[data-img-light][data-img-dark]').forEach(function (img) {
+      var next = theme === 'light' ? img.getAttribute('data-img-light') : img.getAttribute('data-img-dark');
+      if (next && img.getAttribute('src') !== next) img.setAttribute('src', next);
+    });
+    var meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.setAttribute('content', theme === 'light' ? '#ecebfa' : '#0c0820');
+  }
+
+  var themeToggle = document.getElementById('themeToggle');
+  if (themeToggle) {
+    themeToggle.addEventListener('click', function () {
+      var next = (root.getAttribute('data-theme') === 'light') ? 'dark' : 'light';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('bloom-theme', next); } catch (e) {}
+      swapThemedImages();
+      document.dispatchEvent(new CustomEvent('bloom:theme'));
+    });
+  }
+  swapThemedImages();
+
   /* ---------- Static twinkling stars (no rising motion) ---------- */
   var canvas = document.getElementById('stars');
   if (canvas && !reduce) {
@@ -43,6 +68,12 @@
       for (var i = 0; i < count; i++) stars.push(makeStar());
     }
 
+    function starRGB() {
+      var v = getComputedStyle(document.documentElement).getPropertyValue('--star-rgb').trim();
+      return v || '226, 220, 255';
+    }
+    var rgb = starRGB();
+
     function draw() {
       ctx.clearRect(0, 0, W, H);
       for (var i = 0; i < stars.length; i++) {
@@ -51,14 +82,16 @@
         var alpha = s.baseAlpha * (0.45 + 0.55 * Math.sin(s.twinkle));
         ctx.beginPath();
         ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
-        ctx.fillStyle = 'rgba(226, 220, 255, ' + alpha + ')';
-        ctx.shadowColor = 'rgba(169, 156, 240, ' + alpha + ')';
+        ctx.fillStyle = 'rgba(' + rgb + ', ' + alpha + ')';
+        ctx.shadowColor = 'rgba(' + rgb + ', ' + alpha + ')';
         ctx.shadowBlur = s.r * 4;
         ctx.fill();
       }
       ctx.shadowBlur = 0;
       requestAnimationFrame(draw);
     }
+
+    document.addEventListener('bloom:theme', function () { rgb = starRGB(); });
 
     init();
     draw();
