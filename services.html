@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Услуги — dev.</title>
+  <meta name="description" content="Услуги веб-разработки: лендинги, интернет-магазины, корпоративные сайты, веб-приложения, редизайн и поддержка. Прозрачные тарифы." />
+  <meta name="theme-color" content="#0c0c0d" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;1,9..144,300;1,9..144,400&family=Inter:wght@400;450;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-follower" id="cursorFollower" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="На главную">dev<span class="accent-dot">.</span></a>
+      <nav class="nav-links" aria-label="Основная навигация">
+        <a href="index.html">Главная</a>
+        <a href="about.html">О себе</a>
+        <a href="services.html" aria-current="page">Услуги</a>
+        <a href="portfolio.html">Работы</a>
+        <a href="contact.html">Контакты</a>
+      </nav>
+      <div class="nav-right">
+        <div class="social-row">
+          <a href="https://t.me/" class="social-ico" target="_blank" rel="noopener" aria-label="Telegram"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.94 4.3 18.6 20.1c-.25 1.11-.91 1.38-1.85.86l-5.1-3.76-2.46 2.37c-.27.27-.5.5-1.02.5l.36-5.2 9.46-8.55c.41-.36-.09-.57-.64-.2L5.11 13.14l-5.03-1.57c-1.09-.34-1.11-1.09.23-1.62L20.53 2.6c.91-.34 1.71.2 1.41 1.7Z"/></svg></a>
+          <a href="https://github.com/" class="social-ico" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49l-.01-1.72c-2.78.62-3.37-1.37-3.37-1.37-.46-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.57 2.34 1.12 2.91.85.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.72 0 0 .84-.28 2.75 1.05a9.35 9.35 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9l-.01 2.82c0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg></a>
+          <a href="https://dribbble.com/" class="social-ico" target="_blank" rel="noopener" aria-label="Dribbble"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8.5 2.9c4 4.5 6 9.6 6.6 16.4M21.7 10.3c-6.5-1-12 .4-15.6 3.4M2.4 10.2c5.9.3 11.2-1 15-4.7"/></svg></a>
+          <a href="https://behance.net/" class="social-ico" target="_blank" rel="noopener" aria-label="Behance"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8.3 6.3c.9 0 1.7.08 2.4.24.7.16 1.3.42 1.7.77.5.35.8.8 1.05 1.36.24.55.36 1.23.36 2.02 0 .92-.2 1.68-.63 2.3-.42.6-1.05 1.1-1.9 1.5.94.28 1.65.75 2.12 1.42.47.67.7 1.48.7 2.42 0 .77-.15 1.43-.44 1.98-.29.55-.7 1-1.2 1.34-.5.35-1.08.6-1.72.76-.64.16-1.3.24-1.97.24H1V6.3h7.3ZM7.9 11.5c.56 0 1.02-.13 1.38-.4.36-.27.53-.7.53-1.3 0-.34-.06-.62-.18-.83a1.3 1.3 0 0 0-.5-.5 2 2 0 0 0-.72-.25 5 5 0 0 0-.85-.07H4.3v3.35h3.6Zm.2 5.6c.32 0 .62-.03.9-.1.28-.06.53-.17.74-.32.2-.15.37-.35.5-.6.12-.26.18-.58.18-.97 0-.76-.21-1.3-.64-1.63-.43-.32-1-.48-1.7-.48H4.3v4.1h3.8ZM17.5 17.2c.4.38.96.57 1.7.57.53 0 .98-.13 1.37-.4.38-.26.62-.54.7-.83h2.36c-.38 1.17-.96 2-1.74 2.5-.78.5-1.72.75-2.83.75-.77 0-1.46-.12-2.08-.37a4.3 4.3 0 0 1-1.57-1.05 4.6 4.6 0 0 1-1-1.63 6.1 6.1 0 0 1-.35-2.1c0-.75.12-1.44.36-2.08a4.86 4.86 0 0 1 2.6-2.74 5.1 5.1 0 0 1 2.05-.4c.85 0 1.6.17 2.24.5.63.32 1.15.77 1.55 1.32.4.56.7 1.2.87 1.9.17.72.23 1.47.18 2.25h-7.02c0 .8.27 1.45.68 1.84Zm2.96-4.98c-.32-.35-.83-.53-1.5-.53-.44 0-.8.08-1.1.23-.28.15-.5.33-.68.55-.17.2-.29.43-.35.66-.07.24-.1.44-.12.63h4.35c-.06-.68-.28-1.2-.6-1.57ZM15.4 7.68h5.44V9h-5.44V7.68Z"/></svg></a>
+        </div>
+        <div class="nav-divider" aria-hidden="true"></div>
+        <a href="contact.html" class="btn btn-small btn-light nav-cta">Обсудить проект</a>
+      </div>
+      <button class="nav-burger" id="burger" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav aria-label="Мобильная навигация">
+      <a href="index.html">Главная</a>
+      <a href="about.html">О себе</a>
+      <a href="services.html">Услуги</a>
+      <a href="portfolio.html">Работы</a>
+      <a href="contact.html">Контакты</a>
+    </nav>
+  </div>
+
+  <main>
+    <section class="page-hero section-dark">
+      <div class="container">
+        <p class="breadcrumb fade-up"><a href="index.html">Главная</a> — Услуги</p>
+        <h1 class="page-title fade-up">Полный цикл<br /><em>под ключ</em></h1>
+        <p class="lead fade-up">От небольшого лендинга до полноценного интернет-магазина. Проектирую, рисую и разрабатываю сам — без потерь качества между этапами.</p>
+      </div>
+    </section>
+
+    <!-- Full services grid -->
+    <section class="section section-dark">
+      <div class="container">
+        <div class="services-grid">
+          <article class="svc fade-up">
+            <div class="svc-num">01</div>
+            <div class="svc-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M8 21h8"/></svg></div>
+            <h3>Лендинги</h3>
+            <p>Продающие одностраничники с сильным дизайном и высокой конверсией. Идея, копирайтинг, дизайн и разработка.</p>
+            <div class="svc-line" aria-hidden="true"></div>
+          </article>
+          <article class="svc fade-up">
+            <div class="svc-num">02</div>
+            <div class="svc-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.6 12.4a1 1 0 0 0 1 .6h9.7a1 1 0 0 0 1-.7L22 7H6"/></svg></div>
+            <h3>Интернет-магазины</h3>
+            <p>Каталог, корзина, онлайн-оплата и админ-панель. Интеграции с CRM, доставкой и платёжными системами.</p>
+            <div class="svc-line" aria-hidden="true"></div>
+          </article>
+          <article class="svc fade-up">
+            <div class="svc-num">03</div>
+            <div class="svc-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M3 21h18M5 21V7l7-4 7 4v14"/><path d="M9 9h1m4 0h1M9 13h1m4 0h1"/></svg></div>
+            <h3>Корпоративные сайты</h3>
+            <p>Представительные многостраничные сайты с системой управления контентом. Строгий стиль и удобная структура.</p>
+            <div class="svc-line" aria-hidden="true"></div>
+          </article>
+          <article class="svc fade-up">
+            <div class="svc-num">04</div>
+            <div class="svc-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M8 9l-4 3 4 3M16 9l4 3-4 3M13 5l-2 14"/></svg></div>
+            <h3>Веб-приложения</h3>
+            <p>Интерактивные сервисы и личные кабинеты. Сложная логика, но простой и понятный пользователю интерфейс.</p>
+            <div class="svc-line" aria-hidden="true"></div>
+          </article>
+          <article class="svc fade-up">
+            <div class="svc-num">05</div>
+            <div class="svc-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M12 3a9 9 0 1 0 9 9"/><path d="M17 3h4v4"/><path d="M21 3l-7 7"/></svg></div>
+            <h3>Редизайн</h3>
+            <p>Обновление устаревших сайтов: современный вид, скорость, доступность и адаптив под мобильные устройства.</p>
+            <div class="svc-line" aria-hidden="true"></div>
+          </article>
+          <article class="svc fade-up">
+            <div class="svc-num">06</div>
+            <div class="svc-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg></div>
+            <h3>Поддержка и SEO</h3>
+            <p>Техническая поддержка, оптимизация скорости и базовое SEO для устойчивого роста в поисковой выдаче.</p>
+            <div class="svc-line" aria-hidden="true"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="section section-light" id="pricing">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-head-text">
+            <p class="section-label fade-up">Тарифы</p>
+            <h2 class="section-title fade-up">Прозрачные цены</h2>
+          </div>
+          <p class="lead fade-up" style="max-width:320px">Финальная стоимость зависит от объёма — но вилку я называю сразу, до старта.</p>
+        </div>
+        <div class="pricing-grid">
+          <article class="price-card fade-up">
+            <h3>Лендинг</h3>
+            <div class="price-value">от 30 000 ₽</div>
+            <ul>
+              <li>Уникальный дизайн</li>
+              <li>Адаптив под все устройства</li>
+              <li>Анимации и интерактив</li>
+              <li>Срок: 7–10 дней</li>
+            </ul>
+            <a href="contact.html" class="btn btn-dark btn-block">Заказать</a>
+          </article>
+          <article class="price-card price-card-featured fade-up">
+            <div class="price-badge">Популярно</div>
+            <h3>Корпоративный сайт</h3>
+            <div class="price-value">от 70 000 ₽</div>
+            <ul>
+              <li>До 10 страниц</li>
+              <li>Система управления контентом</li>
+              <li>SEO-оптимизация</li>
+              <li>Срок: 3–4 недели</li>
+            </ul>
+            <a href="contact.html" class="btn btn-light btn-block">Заказать</a>
+          </article>
+          <article class="price-card fade-up">
+            <h3>Интернет-магазин</h3>
+            <div class="price-value">от 120 000 ₽</div>
+            <ul>
+              <li>Каталог и корзина</li>
+              <li>Онлайн-оплата</li>
+              <li>Админ-панель</li>
+              <li>Срок: 4–6 недель</li>
+            </ul>
+            <a href="contact.html" class="btn btn-dark btn-block">Заказать</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-light" style="border-top:1px solid var(--line-ink)">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-head-text">
+            <p class="section-label fade-up">Вопросы</p>
+            <h2 class="section-title fade-up">Частые вопросы</h2>
+          </div>
+        </div>
+        <div class="faq-list fade-up">
+          <div class="faq-item">
+            <button class="faq-q" type="button">Сколько времени занимает разработка?<span class="faq-plus" aria-hidden="true"></span></button>
+            <div class="faq-a"><p>Лендинг — 7–10 дней, корпоративный сайт — 3–4 недели, интернет-магазин — 4–6 недель. Точные сроки фиксируем в договоре после брифа.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button">Как проходит оплата?<span class="faq-plus" aria-hidden="true"></span></button>
+            <div class="faq-a"><p>Обычно 50% предоплата и 50% после сдачи. Для крупных проектов делим на этапы с промежуточными выплатами.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button">Вы делаете дизайн или только верстку?<span class="faq-plus" aria-hidden="true"></span></button>
+            <div class="faq-a"><p>И то, и другое. Могу отрисовать дизайн с нуля в Figma либо аккуратно сверстать по вашему готовому макету.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button">Что с поддержкой после запуска?<span class="faq-plus" aria-hidden="true"></span></button>
+            <div class="faq-a"><p>Первый месяц правок — бесплатно. Дальше доступна помесячная поддержка или разовые доработки по мере необходимости.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button">На чём вы разрабатываете?<span class="faq-plus" aria-hidden="true"></span></button>
+            <div class="faq-a"><p>Чистый HTML/CSS/JS для простых сайтов и React/Next.js для сложных проектов. Без тяжёлых конструкторов — ради скорости и контроля.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section section-dark contact-section">
+      <div class="container contact-inner">
+        <h2 class="contact-title fade-up">Расскажите<br /><em>о задаче</em></h2>
+        <p class="contact-sub fade-up">Отвечу в течение пары часов и предложу оптимальное решение.</p>
+        <div class="fade-up" style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+          <a href="contact.html" class="btn btn-light">Оставить заявку <span class="arrow" aria-hidden="true">→</span></a>
+          <a href="portfolio.html" class="btn btn-ghost">Смотреть работы</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">dev<span class="accent-dot">.</span></a>
+          <p>Веб-разработка под ключ. Строгий дизайн, честный код и внимание к каждой детали.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Навигация</h4>
+          <a href="index.html">Главная</a>
+          <a href="about.html">О себе</a>
+          <a href="services.html">Услуги</a>
+          <a href="portfolio.html">Работы</a>
+          <a href="contact.html">Контакты</a>
+        </div>
+        <div class="footer-col">
+          <h4>Контакты</h4>
+          <a href="mailto:hello@dev-studio.ru">hello@dev-studio.ru</a>
+          <a href="https://t.me/" target="_blank" rel="noopener">Telegram</a>
+          <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://dribbble.com/" target="_blank" rel="noopener">Dribbble</a>
+          <a href="https://behance.net/" target="_blank" rel="noopener">Behance</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 dev. — Разработка сайтов. Сделано вручную.</p>
+        <div class="footer-social">
+          <a href="https://t.me/" class="social-ico" target="_blank" rel="noopener" aria-label="Telegram"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.94 4.3 18.6 20.1c-.25 1.11-.91 1.38-1.85.86l-5.1-3.76-2.46 2.37c-.27.27-.5.5-1.02.5l.36-5.2 9.46-8.55c.41-.36-.09-.57-.64-.2L5.11 13.14l-5.03-1.57c-1.09-.34-1.11-1.09.23-1.62L20.53 2.6c.91-.34 1.71.2 1.41 1.7Z"/></svg></a>
+          <a href="https://github.com/" class="social-ico" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49l-.01-1.72c-2.78.62-3.37-1.37-3.37-1.37-.46-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.57 2.34 1.12 2.91.85.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.72 0 0 .84-.28 2.75 1.05a9.35 9.35 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9l-.01 2.82c0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg></a>
+          <a href="https://dribbble.com/" class="social-ico" target="_blank" rel="noopener" aria-label="Dribbble"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8.5 2.9c4 4.5 6 9.6 6.6 16.4M21.7 10.3c-6.5-1-12 .4-15.6 3.4M2.4 10.2c5.9.3 11.2-1 15-4.7"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
