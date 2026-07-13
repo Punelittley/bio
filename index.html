@@ -1,46 +1,44 @@
 <!DOCTYPE html>
-<html lang="ru" class="dark-html">
+<html lang="ru">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Разработка сайтов — Веб-студия одного мастера</title>
-  <meta name="description" content="Создаю современные, быстрые и красивые сайты под ключ. Лендинги, корпоративные сайты, интернет-магазины." />
+  <title>Студия ВЕБ — Территория красивых сайтов</title>
+  <meta name="description" content="Веб-студия полного цикла: лендинги, корпоративные сайты и интернет-магазины под ключ. Строгий дизайн, чистый код и внимание к деталям." />
+  <meta name="theme-color" content="#e6e6e2" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
-  <script type="importmap">
-    {
-      "imports": {
-        "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
-        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
-      }
-    }
-  </script>
 </head>
 <body>
   <!-- Loader -->
   <div class="loader" id="loader" aria-hidden="true">
-    <div class="loader-text">
-      <span>W</span><span>E</span><span>B</span><span>&nbsp;</span><span>D</span><span>E</span><span>V</span>
-    </div>
+    <div class="loader-mark"><span>в</span><span>е</span><span>б</span></div>
   </div>
 
-  <!-- Custom cursor -->
-  <div class="cursor" id="cursor" aria-hidden="true"></div>
-  <div class="cursor-follower" id="cursorFollower" aria-hidden="true"></div>
-
-  <!-- Navigation -->
-  <header class="nav" id="nav">
+  <!-- ============ Header ============ -->
+  <header class="nav">
     <div class="nav-inner">
-      <a href="#hero" class="nav-logo" aria-label="На главную">dev<span class="accent-dot">.</span></a>
+      <a href="index.html" class="nav-logo" aria-label="На главную">веб<span class="accent-dot">.</span></a>
       <nav class="nav-links" aria-label="Основная навигация">
-        <a href="#services">Услуги</a>
-        <a href="#process">Процесс</a>
-        <a href="#work">Работы</a>
-        <a href="#pricing">Цены</a>
+        <a href="index.html" aria-current="page">Главная</a>
+        <a href="services.html">Услуги</a>
+        <a href="portfolio.html">Работы</a>
+        <a href="about.html">О нас</a>
+        <a href="contact.html">Контакты</a>
       </nav>
-      <a href="#contact" class="btn btn-small btn-invert nav-cta">Обсудить проект</a>
+      <div class="nav-right">
+        <div class="nav-loc">
+          <span class="icon-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 21s-7-5.2-7-11a7 7 0 0 1 14 0c0 5.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+          <span class="nav-loc-text"><b>Мы здесь</b><span>Москва, дистанционно</span></span>
+        </div>
+        <div class="social-row">
+          <a href="https://t.me/" class="social-ico" target="_blank" rel="noopener" aria-label="Telegram"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.94 4.3 18.6 20.1c-.25 1.11-.91 1.38-1.85.86l-5.1-3.76-2.46 2.37c-.27.27-.5.5-1.02.5l.36-5.2 9.46-8.55c.41-.36-.09-.57-.64-.2L5.11 13.14l-5.03-1.57c-1.09-.34-1.11-1.09.23-1.62L20.53 2.6c.91-.34 1.71.2 1.41 1.7Z"/></svg></a>
+          <a href="https://github.com/" class="social-ico" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49l-.01-1.72c-2.78.62-3.37-1.37-3.37-1.37-.46-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.57 2.34 1.12 2.91.85.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.72 0 0 .84-.28 2.75 1.05a9.35 9.35 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9l-.01 2.82c0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg></a>
+        </div>
+        <a href="contact.html" class="btn btn-dark btn-small nav-cta">Записаться</a>
+      </div>
       <button class="nav-burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
         <span></span><span></span>
       </button>
@@ -50,316 +48,255 @@
   <!-- Mobile menu -->
   <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
     <nav aria-label="Мобильная навигация">
-      <a href="#services">Услуги</a>
-      <a href="#process">Процесс</a>
-      <a href="#work">Работы</a>
-      <a href="#pricing">Цены</a>
-      <a href="#contact">Контакты</a>
+      <a href="index.html">Главная</a>
+      <a href="services.html">Услуги</a>
+      <a href="portfolio.html">Работы</a>
+      <a href="about.html">О нас</a>
+      <a href="contact.html">Контакты</a>
     </nav>
+    <div class="mobile-social">
+      <a href="https://t.me/" class="social-ico" target="_blank" rel="noopener" aria-label="Telegram"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.94 4.3 18.6 20.1c-.25 1.11-.91 1.38-1.85.86l-5.1-3.76-2.46 2.37c-.27.27-.5.5-1.02.5l.36-5.2 9.46-8.55c.41-.36-.09-.57-.64-.2L5.11 13.14l-5.03-1.57c-1.09-.34-1.11-1.09.23-1.62L20.53 2.6c.91-.34 1.71.2 1.41 1.7Z"/></svg></a>
+      <a href="https://github.com/" class="social-ico" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49l-.01-1.72c-2.78.62-3.37-1.37-3.37-1.37-.46-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.57 2.34 1.12 2.91.85.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.72 0 0 .84-.28 2.75 1.05a9.35 9.35 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9l-.01 2.82c0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg></a>
+    </div>
   </div>
 
   <main>
     <!-- ============ HERO ============ -->
-    <section class="hero" id="hero">
-      <canvas id="hero-canvas" aria-hidden="true"></canvas>
-      <div class="hero-content">
-        <p class="hero-eyebrow reveal-line"><span>Веб-разработчик · Фриланс</span></p>
-        <h1 class="hero-title">
-          <span class="reveal-line"><span>Создаю сайты,</span></span>
-          <span class="reveal-line"><span>которые <em>работают</em></span></span>
-          <span class="reveal-line"><span>на ваш бизнес</span></span>
-        </h1>
-        <p class="hero-sub reveal-line"><span>Лендинги, корпоративные сайты и интернет-магазины.<br />Современный дизайн. Чистый код. Быстрая загрузка.</span></p>
-        <div class="hero-actions reveal-line">
-          <span>
-            <a href="#contact" class="btn btn-light">Начать проект</a>
-            <a href="#work" class="btn btn-ghost">Смотреть работы</a>
-          </span>
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="hero-left fade-up">
+          <h1 class="hero-title">Территория<br />красивых<br /><em>сайтов</em></h1>
+
+          <div class="hero-services">
+            <div class="hero-services-head">
+              <span>Наши услуги</span>
+              <span class="chip">6 направлений</span>
+            </div>
+            <div class="service-list">
+              <a href="services.html" class="service-item">
+                <img class="service-thumb" src="images/work-1.png" alt="" loading="lazy" />
+                <h3>Лендинги</h3>
+                <span class="service-count">10+ видов</span>
+                <span class="service-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+              </a>
+              <a href="services.html" class="service-item">
+                <img class="service-thumb" src="images/work-2.png" alt="" loading="lazy" />
+                <h3>Интернет-магазины</h3>
+                <span class="service-count">под ключ</span>
+                <span class="service-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+              </a>
+              <a href="services.html" class="service-item">
+                <img class="service-thumb" src="images/work-3.png" alt="" loading="lazy" />
+                <h3>Корпоративные сайты</h3>
+                <span class="service-count">8 видов</span>
+                <span class="service-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+              </a>
+            </div>
+            <a href="services.html" class="service-all">Посмотреть все</a>
+          </div>
         </div>
-      </div>
-      <div class="hero-scroll" aria-hidden="true">
-        <div class="hero-scroll-line"></div>
-        <span>scroll</span>
+
+        <div class="hero-card fade-up">
+          <img src="images/hero.png" alt="Рабочее место веб-дизайнера с ноутбуком" />
+          <div class="hero-card-top">
+            <div class="hero-loc">
+              <span class="icon-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-5.2-7-11a7 7 0 0 1 14 0c0 5.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+              <span class="hero-loc-text"><b>Работаем онлайн</b><span>По всей России и СНГ</span></span>
+            </div>
+            <a href="contact.html" class="btn btn-accent btn-small">Записаться</a>
+          </div>
+          <div class="hero-search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3-3"/></svg>
+            <span>Веб-студия полного цикла в Москве</span>
+            <span class="close" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6l12 12M18 6 6 18"/></svg></span>
+          </div>
+          <div class="hero-card-bottom">
+            <div class="hero-pill">
+              <span class="avatar" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4Z"/></svg></span>
+              <span><b>Напишите нам</b>Менеджер на связи</span>
+            </div>
+            <div class="hero-social">
+              <span class="dots">
+                <a href="https://t.me/" target="_blank" rel="noopener" aria-label="Telegram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.94 4.3 18.6 20.1c-.25 1.11-.91 1.38-1.85.86l-5.1-3.76-2.46 2.37c-.27.27-.5.5-1.02.5l.36-5.2 9.46-8.55c.41-.36-.09-.57-.64-.2L5.11 13.14l-5.03-1.57c-1.09-.34-1.11-1.09.23-1.62L20.53 2.6c.91-.34 1.71.2 1.41 1.7Z"/></svg></a>
+                <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49l-.01-1.72c-2.78.62-3.37-1.37-3.37-1.37-.46-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.57 2.34 1.12 2.91.85.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.72 0 0 .84-.28 2.75 1.05a9.35 9.35 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9l-.01 2.82c0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg></a>
+              </span>
+              <span>Мы в соцсетях</span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- ============ MARQUEE x3 ============ -->
-    <div class="marquee-stack" aria-hidden="true">
-      <div class="marquee marquee-light">
-        <div class="marquee-track">
-          <span>Лендинги — Интернет-магазины — Корпоративные сайты — Веб-приложения — Редизайн — SEO-оптимизация —&nbsp;</span>
-          <span>Лендинги — Интернет-магазины — Корпоративные сайты — Веб-приложения — Редизайн — SEO-оптимизация —&nbsp;</span>
+    <!-- ============ WHY US ============ -->
+    <section class="whyus" id="whyus">
+      <div class="container">
+        <div class="whyus-center" aria-hidden="true">
+          <div class="whyus-rings"></div>
+          <h2>Почему<br />мы?</h2>
+        </div>
+        <div class="whyus-wrap">
+          <article class="whyus-card fade-up">
+            <div class="whyus-card-head">
+              <h3>Опытная<br />команда</h3>
+              <div class="whyus-num"><b>01</b> 04</div>
+            </div>
+            <p>Средний стаж специалистов 7+ лет. Мы не только делаем сайты, но и обучаем других разработчиков.</p>
+          </article>
+          <article class="whyus-card fade-up">
+            <div class="whyus-card-head">
+              <h3>Удобный<br />процесс</h3>
+              <div class="whyus-num"><b>03</b> 04</div>
+            </div>
+            <p>Работаем полностью онлайн: понятные этапы, регулярные созвоны и прозрачные сроки на каждом шаге.</p>
+          </article>
+          <article class="whyus-card fade-up">
+            <div class="whyus-card-head">
+              <h3>Сервис<br />и качество</h3>
+              <div class="whyus-num"><b>02</b> 04</div>
+            </div>
+            <p>Чистый код, адаптив под любые устройства и скорость загрузки меньше секунды — по умолчанию.</p>
+          </article>
+          <article class="whyus-card fade-up">
+            <div class="whyus-card-head">
+              <h3>Актуальные<br />технологии</h3>
+              <div class="whyus-num"><b>04</b> 04</div>
+            </div>
+            <p>Используем современный стек и следим за трендами, чтобы ваш сайт был быстрым и выделялся среди конкурентов.</p>
+          </article>
         </div>
       </div>
-      <div class="marquee marquee-dark">
-        <div class="marquee-track marquee-reverse">
-          <span>Дизайн — Разработка — Анимации — Адаптив — Скорость — Поддержка — Дизайн — Разработка — Анимации — Адаптив — Скорость — Поддержка —&nbsp;</span>
-          <span>Дизайн — Разработка — Анимации — Адаптив — Скорость — Поддержка — Дизайн — Разработка — Анимации — Адаптив — Скорость — Поддержка —&nbsp;</span>
+    </section>
+
+    <!-- ============ BENTO ============ -->
+    <section class="bento-section" id="directions">
+      <div class="container">
+        <p class="section-label fade-up">Выберите раздел:</p>
+        <h2 class="bento-switch fade-up">Разработка <span class="sep">/</span> <span class="off">Дизайн</span></h2>
+        <div class="bento">
+          <div class="bento-card accent on-light fade-up">
+            <h3>Консультация</h3>
+            <a href="services.html" class="go" aria-label="Подробнее"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+          <div class="bento-card bento-tall fade-up">
+            <img src="images/work-2.png" alt="Интернет-магазин" loading="lazy" />
+            <h3>Интернет-магазины</h3>
+            <a href="portfolio.html" class="go" aria-label="Подробнее"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+          <div class="bento-card bento-wide fade-up">
+            <img src="images/work-3.png" alt="Корпоративный сайт" loading="lazy" />
+            <h3>Корпоративные сайты</h3>
+            <a href="portfolio.html" class="go" aria-label="Подробнее"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+          <div class="bento-card fade-up">
+            <img src="images/work-1.png" alt="Лендинги" loading="lazy" />
+            <h3>Лендинги</h3>
+            <a href="portfolio.html" class="go" aria-label="Подробнее"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+          <div class="bento-card fade-up">
+            <img src="images/shape-green.png" alt="Веб-приложения" loading="lazy" />
+            <h3>Веб-приложения</h3>
+            <a href="portfolio.html" class="go" aria-label="Подробнее"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+          <div class="bento-card on-light fade-up" style="background:var(--card)">
+            <h3 style="color:var(--ink)">Больше работ<br />в портфолио</h3>
+            <a href="portfolio.html" class="go" style="background:var(--accent);color:var(--accent-ink)" aria-label="Подробнее"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
         </div>
       </div>
-      <div class="marquee marquee-light">
-        <div class="marquee-track marquee-slow">
-          <span>HTML — CSS — JavaScript — Three.js — React — Next.js — Figma — HTML — CSS — JavaScript — Three.js — React — Next.js — Figma —&nbsp;</span>
-          <span>HTML — CSS — JavaScript — Three.js — React — Next.js — Figma — HTML — CSS — JavaScript — Three.js — React — Next.js — Figma —&nbsp;</span>
-        </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Лендинги<span class="dot"> · </span>Интернет-магазины<span class="dot"> · </span>Корпоративные сайты<span class="dot"> · </span>Веб-приложения<span class="dot"> · </span>Редизайн<span class="dot"> · </span>SEO<span class="dot"> · </span></span>
+        <span>Лендинги<span class="dot"> · </span>Интернет-магазины<span class="dot"> · </span>Корпоративные сайты<span class="dot"> · </span>Веб-приложения<span class="dot"> · </span>Редизайн<span class="dot"> · </span>SEO<span class="dot"> · </span></span>
       </div>
     </div>
 
-    <!-- ============ SERVICES ============ -->
-    <section class="section section-dark services-section" id="services">
-      <div class="services-glow" aria-hidden="true"></div>
+    <!-- ============ FEATURED ============ -->
+    <section class="featured" id="featured">
       <div class="container">
-        <div class="section-head">
-          <p class="section-label fade-up">01 — Услуги</p>
-          <h2 class="section-title fade-up">Что я делаю</h2>
-        </div>
-        <div class="services-grid">
-          <article class="glass-card fade-up">
-            <div class="glass-card-head">
-              <div class="glass-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M8 21h8"/></svg>
-              </div>
-              <div class="glass-num">01</div>
+        <p class="featured-label fade-up">Популярная услуга:</p>
+        <div class="featured-grid">
+          <div class="fade-up">
+            <h2 class="featured-title">Лендинг<br />под ключ</h2>
+            <p class="featured-tags-label">кому подходит:</p>
+            <div class="featured-tags">
+              <span class="featured-tag">запуск продукта</span>
+              <span class="featured-tag">реклама и трафик</span>
+              <span class="featured-tag">личный бренд</span>
             </div>
-            <h3>Лендинги</h3>
-            <p>Продающие одностраничные сайты с сильным дизайном и высокой конверсией. От идеи до запуска.</p>
-            <div class="glass-line" aria-hidden="true"></div>
-          </article>
-          <article class="glass-card fade-up">
-            <div class="glass-card-head">
-              <div class="glass-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h3l2.6 12.4a1 1 0 0 0 1 .6h9.7a1 1 0 0 0 1-.7L22 7H6"/></svg>
-              </div>
-              <div class="glass-num">02</div>
-            </div>
-            <h3>Интернет-магазины</h3>
-            <p>Полноценные e-commerce решения: каталог, корзина, оплата, админ-панель. Всё под ключ.</p>
-            <div class="glass-line" aria-hidden="true"></div>
-          </article>
-          <article class="glass-card fade-up">
-            <div class="glass-card-head">
-              <div class="glass-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18M5 21V7l7-4 7 4v14"/><path d="M9 9h1m4 0h1M9 13h1m4 0h1M9 17h1m4 0h1"/></svg>
-              </div>
-              <div class="glass-num">03</div>
-            </div>
-            <h3>Корпоративные сайты</h3>
-            <p>Представительные многостраничные сайты для компаний. Строгий стиль, удобная структура.</p>
-            <div class="glass-line" aria-hidden="true"></div>
-          </article>
-          <article class="glass-card fade-up">
-            <div class="glass-card-head">
-              <div class="glass-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 9l-4 3 4 3M16 9l4 3-4 3M13 5l-2 14"/></svg>
-              </div>
-              <div class="glass-num">04</div>
-            </div>
-            <h3>Веб-приложения</h3>
-            <p>Интерактивные сервисы и личные кабинеты. Сложная логика, простая для пользователя.</p>
-            <div class="glass-line" aria-hidden="true"></div>
-          </article>
-          <article class="glass-card fade-up">
-            <div class="glass-card-head">
-              <div class="glass-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3a9 9 0 1 0 9 9"/><path d="M17 3h4v4"/><path d="M21 3l-7 7"/></svg>
-              </div>
-              <div class="glass-num">05</div>
-            </div>
-            <h3>Редизайн</h3>
-            <p>Обновление устаревших сайтов: современный вид, скорость и адаптивность под мобильные.</p>
-            <div class="glass-line" aria-hidden="true"></div>
-          </article>
-          <article class="glass-card fade-up">
-            <div class="glass-card-head">
-              <div class="glass-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
-              </div>
-              <div class="glass-num">06</div>
-            </div>
-            <h3>Поддержка и SEO</h3>
-            <p>Техническая поддержка, оптимизация скорости и базовое SEO для роста в поиске.</p>
-            <div class="glass-line" aria-hidden="true"></div>
-          </article>
+          </div>
+          <div class="featured-media fade-up">
+            <img src="images/featured-round.png" alt="Разработка лендинга" loading="lazy" />
+            <button class="featured-play" aria-label="Смотреть видео"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
+          </div>
+          <div class="featured-right fade-up">
+            <p class="featured-desc">Продающий одностраничный сайт с сильным дизайном и высокой конверсией. Собираем структуру под вашу цель, пишем тексты-смыслы и запускаем за 1–2 недели.</p>
+            <a href="services.html" class="featured-more">
+              Подробнее<br />об услуге
+              <span class="icon-btn icon-btn-accent" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+            </a>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- ============ STATS ============ -->
-    <section class="section section-dark stats-section">
+    <section class="section-pad" style="padding-top:0">
       <div class="container">
         <div class="stats-grid">
-          <div class="stat glass-stat fade-up">
-            <div class="stat-value" data-count="40">0</div>
+          <div class="stat fade-up">
+            <div class="stat-value" data-count="120" data-suffix="+">0</div>
             <div class="stat-label">Проектов запущено</div>
           </div>
-          <div class="stat glass-stat fade-up">
-            <div class="stat-value" data-count="5">0</div>
-            <div class="stat-label">Лет опыта</div>
+          <div class="stat fade-up">
+            <div class="stat-value" data-count="7">0</div>
+            <div class="stat-label">Лет на рынке</div>
           </div>
-          <div class="stat glass-stat fade-up">
+          <div class="stat fade-up">
             <div class="stat-value" data-count="98" data-suffix="%">0</div>
             <div class="stat-label">Довольных клиентов</div>
           </div>
-          <div class="stat glass-stat fade-up">
-            <div class="stat-value" data-count="100" data-suffix="/100">0</div>
+          <div class="stat fade-up">
+            <div class="stat-value" data-count="100">0</div>
             <div class="stat-label">PageSpeed Score</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ============ PROCESS ============ -->
-    <section class="section section-light" id="process">
+    <!-- ============ REVIEWS ============ -->
+    <section class="section-pad" style="padding-top:0" id="reviews">
       <div class="container">
         <div class="section-head">
-          <p class="section-label fade-up">02 — Процесс</p>
-          <h2 class="section-title fade-up">Как я работаю</h2>
+          <div class="section-head-text">
+            <p class="section-label fade-up">Отзывы</p>
+            <h2 class="section-title fade-up">Что говорят<br /><em>клиенты</em></h2>
+          </div>
         </div>
-        <div class="process-list">
-          <div class="process-item fade-up">
-            <div class="process-step">Шаг 1</div>
-            <h3>Бриф и анализ</h3>
-            <p>Обсуждаем цели, аудиторию и конкурентов. Формируем чёткое техническое задание.</p>
-          </div>
-          <div class="process-item fade-up">
-            <div class="process-step">Шаг 2</div>
-            <h3>Дизайн</h3>
-            <p>Создаю макет: структура, типографика, анимации. Согласовываем каждый экран.</p>
-          </div>
-          <div class="process-item fade-up">
-            <div class="process-step">Шаг 3</div>
-            <h3>Разработка</h3>
-            <p>Верстаю и программирую. Чистый код, адаптив, скорость загрузки меньше секунды.</p>
-          </div>
-          <div class="process-item fade-up">
-            <div class="process-step">Шаг 4</div>
-            <h3>Запуск и поддержка</h3>
-            <p>Публикую сайт, настраиваю домен и аналитику. Остаюсь на связи после запуска.</p>
-          </div>
+        <div class="quote-grid">
+          <figure class="quote-card fade-up">
+            <p>«Сделали сайт за две недели — быстрее и аккуратнее любой студии, с которой мы работали.»</p>
+            <figcaption class="quote-author"><span class="dot">А</span><span><b>Анна Реброва</b><span>Основатель, Studio Form</span></span></figcaption>
+          </figure>
+          <figure class="quote-card fade-up">
+            <p>«Внимание к деталям на уровне. Каждая анимация уместна, ничего лишнего.»</p>
+            <figcaption class="quote-author"><span class="dot">М</span><span><b>Максим Дьяков</b><span>CEO, Nordic Fintech</span></span></figcaption>
+          </figure>
+          <figure class="quote-card fade-up">
+            <p>«Конверсия лендинга выросла вдвое. Рекомендую без оговорок.»</p>
+            <figcaption class="quote-author"><span class="dot">Е</span><span><b>Елена Крайнова</b><span>Маркетолог, Bloom</span></span></figcaption>
+          </figure>
         </div>
       </div>
     </section>
 
-    <!-- ============ WORK ============ -->
-    <section class="section section-dark" id="work">
-      <div class="container">
-        <div class="section-head">
-          <p class="section-label fade-up">03 — Работы</p>
-          <h2 class="section-title fade-up">Избранные проекты</h2>
-        </div>
-        <div class="work-slider fade-up">
-          <div class="work-track" id="workTrack" tabindex="0" role="region" aria-label="Слайдер проектов">
-            <a href="#contact" class="work-card work-slide">
-              <div class="work-image">
-                <img src="images/work-1.png" alt="Лендинг для архитектурной студии" loading="lazy" />
-              </div>
-              <div class="work-info">
-                <h3>Архитектурная студия</h3>
-                <span>Лендинг · Дизайн + Разработка</span>
-              </div>
-            </a>
-            <a href="#contact" class="work-card work-slide">
-              <div class="work-image">
-                <img src="images/work-2.png" alt="Интернет-магазин минималистичной мебели" loading="lazy" />
-              </div>
-              <div class="work-info">
-                <h3>Магазин мебели</h3>
-                <span>E-commerce · Под ключ</span>
-              </div>
-            </a>
-            <a href="#contact" class="work-card work-slide">
-              <div class="work-image">
-                <img src="images/work-3.png" alt="Корпоративный сайт финтех-компании" loading="lazy" />
-              </div>
-              <div class="work-info">
-                <h3>Финтех-компания</h3>
-                <span>Корпоративный сайт</span>
-              </div>
-            </a>
-            <a href="#contact" class="work-card work-slide">
-              <div class="work-image">
-                <img src="images/work-4.png" alt="Веб-приложение фитнес-трекера" loading="lazy" />
-              </div>
-              <div class="work-info">
-                <h3>Фитнес-платформа</h3>
-                <span>Веб-приложение</span>
-              </div>
-            </a>
-          </div>
-          <div class="slider-controls">
-            <button class="slider-btn" id="workPrev" aria-label="Предыдущий проект">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-            </button>
-            <div class="slider-dots" id="workDots" role="tablist" aria-label="Навигация по слайдам"></div>
-            <button class="slider-btn" id="workNext" aria-label="Следующий проект">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ PRICING ============ -->
-    <section class="section section-light" id="pricing">
-      <div class="container">
-        <div class="section-head">
-          <p class="section-label fade-up">04 — Цены</p>
-          <h2 class="section-title fade-up">Прозрачные тарифы</h2>
-        </div>
-        <div class="pricing-grid">
-          <article class="price-card tilt-card fade-up">
-            <div class="tilt-shine" aria-hidden="true"></div>
-            <div class="tilt-inner">
-              <h3>Лендинг</h3>
-              <div class="price-value">от 30 000 ₽</div>
-              <ul>
-                <li>Уникальный дизайн</li>
-                <li>Адаптив под все устройства</li>
-                <li>Анимации и интерактив</li>
-                <li>Срок: 7–10 дней</li>
-              </ul>
-              <a href="#contact" class="btn btn-dark btn-block">Заказать</a>
-            </div>
-          </article>
-          <article class="price-card price-card-featured tilt-card fade-up">
-            <div class="tilt-shine" aria-hidden="true"></div>
-            <div class="price-badge">Популярно</div>
-            <div class="tilt-inner">
-              <h3>Корпоративный сайт</h3>
-              <div class="price-value">от 70 000 ₽</div>
-              <ul>
-                <li>До 10 страниц</li>
-                <li>Система управления контентом</li>
-                <li>SEO-оптимизация</li>
-                <li>Срок: 3–4 недели</li>
-              </ul>
-              <a href="#contact" class="btn btn-light btn-block">Заказать</a>
-            </div>
-          </article>
-          <article class="price-card tilt-card fade-up">
-            <div class="tilt-shine" aria-hidden="true"></div>
-            <div class="tilt-inner">
-              <h3>Интернет-магазин</h3>
-              <div class="price-value">от 120 000 ₽</div>
-              <ul>
-                <li>Каталог и корзина</li>
-                <li>Онлайн-оплата</li>
-                <li>Админ-панель</li>
-                <li>Срок: 4–6 недель</li>
-              </ul>
-              <a href="#contact" class="btn btn-dark btn-block">Заказать</a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ CTA / CONTACT ============ -->
-    <section class="section section-dark contact-section" id="contact">
-      <canvas id="contact-canvas" aria-hidden="true"></canvas>
-      <div class="container contact-inner">
+    <!-- ============ CTA ============ -->
+    <section class="contact-section" id="contact">
+      <div class="contact-inner">
         <h2 class="contact-title fade-up">Готовы обсудить<br /><em>ваш проект?</em></h2>
-        <p class="contact-sub fade-up">Напишите мне — отвечу в течение пары часов и предложу лучшее решение.</p>
+        <p class="contact-sub fade-up">Оставьте заявку — ответим в течение пары часов и предложим лучшее решение.</p>
         <form class="contact-form fade-up" id="contactForm">
           <div class="form-row">
             <div class="form-field">
@@ -375,7 +312,7 @@
             <label for="message">О проекте</label>
             <textarea id="message" name="message" rows="4" placeholder="Расскажите, какой сайт вам нужен..." required></textarea>
           </div>
-          <button type="submit" class="btn btn-light btn-large" id="submitBtn">Отправить заявку</button>
+          <button type="submit" class="btn btn-accent btn-large" id="submitBtn">Отправить заявку</button>
           <p class="form-success" id="formSuccess" role="status" aria-live="polite"></p>
         </form>
       </div>
@@ -384,18 +321,40 @@
 
   <!-- ============ FOOTER ============ -->
   <footer class="footer">
-    <div class="container footer-inner">
-      <a href="#hero" class="nav-logo">dev<span class="accent-dot">.</span></a>
-      <p>© 2026 — Разработка сайтов. Сделано с любовью к деталям.</p>
-      <div class="footer-links">
-        <a href="#contact">Telegram</a>
-        <a href="#contact">Email</a>
-        <a href="#contact">GitHub</a>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">веб<span class="accent-dot">.</span></a>
+          <p>Веб-студия полного цикла. Строгий дизайн, честный код и внимание к каждой детали.</p>
+          <div class="social-row">
+            <a href="https://t.me/" class="social-ico" target="_blank" rel="noopener" aria-label="Telegram"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.94 4.3 18.6 20.1c-.25 1.11-.91 1.38-1.85.86l-5.1-3.76-2.46 2.37c-.27.27-.5.5-1.02.5l.36-5.2 9.46-8.55c.41-.36-.09-.57-.64-.2L5.11 13.14l-5.03-1.57c-1.09-.34-1.11-1.09.23-1.62L20.53 2.6c.91-.34 1.71.2 1.41 1.7Z"/></svg></a>
+            <a href="https://github.com/" class="social-ico" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49l-.01-1.72c-2.78.62-3.37-1.37-3.37-1.37-.46-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.57 2.34 1.12 2.91.85.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.72 0 0 .84-.28 2.75 1.05a9.35 9.35 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9l-.01 2.82c0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg></a>
+            <a href="https://dribbble.com/" class="social-ico" target="_blank" rel="noopener" aria-label="Dribbble"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8.5 2.9c4 4.5 6 9.6 6.6 16.4M21.7 10.3c-6.5-1-12 .4-15.6 3.4M2.4 10.2c5.9.3 11.2-1 15-4.7"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Навигация</h4>
+          <a href="index.html">Главная</a>
+          <a href="services.html">Услуги</a>
+          <a href="portfolio.html">Работы</a>
+          <a href="about.html">О нас</a>
+          <a href="contact.html">Контакты</a>
+        </div>
+        <div class="footer-col">
+          <h4>Контакты</h4>
+          <a href="mailto:hello@web-studio.ru">hello@web-studio.ru</a>
+          <a href="https://t.me/" target="_blank" rel="noopener">Telegram</a>
+          <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://dribbble.com/" target="_blank" rel="noopener">Dribbble</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Студия ВЕБ. Все права защищены.</span>
+        <span>Сделано вручную, с вниманием к деталям.</span>
       </div>
     </div>
   </footer>
 
-  <script type="module" src="js/scene.js"></script>
-  <script src="js/main.js" defer></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
