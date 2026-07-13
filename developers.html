@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#dcd8ee" />
-  <title>BloomFi — Developers</title>
-  <meta name="description" content="Integrate USD bloom in minutes with clean SDKs, REST APIs and on-chain contracts built for developers." />
+  <meta name="theme-color" content="#0c0820" />
+  <title>BloomFi — Разработчикам</title>
+  <meta name="description" content="Интегрируйте USD Bloom за минуты с помощью удобных SDK, типизированного REST API и аудированных ончейн-контрактов." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
   <style>
     .code-block {
-      background: var(--deep);
+      background: #0e0925;
       color: #e7e2fb;
+      border: 1px solid var(--card-line);
       border-radius: var(--radius);
       padding: 26px 28px;
       font-family: 'JetBrains Mono', ui-monospace, monospace;
@@ -32,27 +33,27 @@
 
   <header class="site-header">
     <div class="header-inner">
-      <a href="index.html" class="brand" aria-label="BloomFi home">
+      <a href="index.html" class="brand" aria-label="BloomFi — на главную">
         <svg class="brand-mark" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1.5c.9 6 3.6 8.6 9.6 9.6-6 1-8.7 3.6-9.6 9.6-.9-6-3.6-8.6-9.6-9.6 6-1 8.7-3.6 9.6-9.6Z"/></svg>
         BloomFi
       </a>
-      <nav class="main-nav" aria-label="Primary">
-        <a href="index.html">USD bloom</a>
-        <a href="business.html">Business</a>
-        <a href="treasury.html">Treasury</a>
-        <a href="developers.html" class="active">Developers</a>
+      <nav class="main-nav" aria-label="Основная навигация">
+        <a href="index.html">USD Bloom</a>
+        <a href="business.html">Бизнес</a>
+        <a href="treasury.html">Казначейство</a>
+        <a href="developers.html" class="active">Разработчикам</a>
       </nav>
-      <a href="#start" class="btn btn-dark btn-sm header-cta">Launch BETA</a>
-      <button class="header-burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+      <a href="#start" class="btn btn-dark btn-sm header-cta">Запустить BETA</a>
+      <button class="header-burger" id="burger" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span></button>
     </div>
   </header>
 
   <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
-    <nav aria-label="Mobile">
-      <a href="index.html">USD bloom</a>
-      <a href="business.html">Business</a>
-      <a href="treasury.html">Treasury</a>
-      <a href="developers.html">Developers</a>
+    <nav aria-label="Мобильная навигация">
+      <a href="index.html">USD Bloom</a>
+      <a href="business.html">Бизнес</a>
+      <a href="treasury.html">Казначейство</a>
+      <a href="developers.html">Разработчикам</a>
     </nav>
   </div>
 
@@ -60,28 +61,28 @@
     <div class="panel">
       <main class="page">
         <section class="page-hero">
-          <p class="eyebrow reveal">For Developers</p>
-          <h1 class="reveal">Yield in a<br />few lines of code</h1>
-          <p class="reveal">Integrate USD bloom with clean SDKs, a typed REST API, and audited on-chain contracts. Ship native yield without becoming a DeFi expert.</p>
+          <p class="eyebrow reveal">Разработчикам</p>
+          <h1 class="reveal">Доходность в<br />несколько строк кода</h1>
+          <p class="reveal">Интегрируйте USD Bloom с помощью удобных SDK, типизированного REST API и аудированных ончейн-контрактов. Запускайте нативную доходность, не будучи экспертом в DeFi.</p>
           <div class="reveal" style="margin-top:26px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
-            <a href="#start" class="btn btn-dark">Get API keys</a>
-            <a href="#" class="btn btn-ghost">View reference</a>
+            <a href="#start" class="btn btn-dark">Получить API-ключи</a>
+            <a href="#" class="btn btn-ghost">Смотреть справочник</a>
           </div>
         </section>
 
         <section class="section">
           <div class="split">
-            <div class="reveal">
-              <p class="eyebrow">Quickstart</p>
-              <h2 class="h2">Deposit and<br />start earning</h2>
-              <p style="color:var(--ink-muted);margin-top:16px;max-width:360px">One call to deposit, one to check the live balance. The SDK handles chains, gas and routing for you.</p>
+            <div class="reveal-left">
+              <p class="eyebrow">Быстрый старт</p>
+              <h2 class="h2">Внесите и<br />начните зарабатывать</h2>
+              <p style="color:var(--ink-muted);margin-top:16px;max-width:360px">Один вызов для депозита, один — чтобы узнать текущий баланс. SDK берёт на себя сети, газ и маршрутизацию.</p>
             </div>
-            <div class="code-block reveal"><span class="c-com">// npm i @bloomfi/sdk</span>
+            <div class="code-block reveal-right"><span class="c-com">// npm i @bloomfi/sdk</span>
 <span class="c-key">import</span> { Bloom } <span class="c-key">from</span> <span class="c-str">"@bloomfi/sdk"</span>;
 
 <span class="c-key">const</span> bloom = <span class="c-key">new</span> Bloom(process.env.BLOOM_KEY);
 
-<span class="c-com">// deposit 500 USDC into USD bloom</span>
+<span class="c-com">// внести 500 USDC в USD Bloom</span>
 <span class="c-key">await</span> bloom.deposit({
   amount: <span class="c-str">"500"</span>,
   asset: <span class="c-str">"USDC"</span>,
@@ -95,41 +96,41 @@ console.log(b.apy); <span class="c-com">// 8.4</span></div>
 
         <section class="section" style="padding-top:0">
           <div class="grid-3">
-            <article class="info-card reveal">
+            <article class="info-card reveal-left">
               <div class="info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 9l-4 3 4 3M16 9l4 3-4 3M13 5l-2 14"/></svg></div>
               <h3>TypeScript SDK</h3>
-              <p>Fully typed client with helpers for deposits, redemptions, balances and webhooks.</p>
+              <p>Полностью типизированный клиент с хелперами для депозитов, погашений, балансов и вебхуков.</p>
             </article>
             <article class="info-card reveal">
               <div class="info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/></svg></div>
-              <h3>REST + Webhooks</h3>
-              <p>Language-agnostic HTTP API with signed webhook events for every balance change.</p>
+              <h3>REST + вебхуки</h3>
+              <p>Не зависящий от языка HTTP API с подписанными событиями вебхуков на каждое изменение баланса.</p>
             </article>
-            <article class="info-card reveal">
+            <article class="info-card reveal-right">
               <div class="info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
-              <h3>Audited contracts</h3>
-              <p>Open-source, multi-audited smart contracts you can compose with directly on-chain.</p>
+              <h3>Аудированные контракты</h3>
+              <p>Открытые, многократно проаудированные смарт-контракты, с которыми можно работать напрямую в блокчейне.</p>
             </article>
           </div>
         </section>
 
         <section class="section" style="padding-top:0">
           <div class="stat-band">
-            <div class="stat-box reveal"><div class="num"><span data-count="4">0</span></div><div class="lbl">Supported chains</div></div>
-            <div class="stat-box reveal"><div class="num"><span data-count="99.9" data-suffix="%">0</span></div><div class="lbl">API uptime</div></div>
-            <div class="stat-box reveal"><div class="num"><span data-count="120" data-suffix="ms">0</span></div><div class="lbl">Median latency</div></div>
-            <div class="stat-box reveal"><div class="num"><span data-count="3">0</span></div><div class="lbl">Security audits</div></div>
+            <div class="stat-box reveal"><div class="num"><span data-count="4">0</span></div><div class="lbl">Поддерживаемых сетей</div></div>
+            <div class="stat-box reveal"><div class="num"><span data-count="99.9" data-suffix="%">0</span></div><div class="lbl">Аптайм API</div></div>
+            <div class="stat-box reveal"><div class="num"><span data-count="120" data-suffix="мс">0</span></div><div class="lbl">Медианная задержка</div></div>
+            <div class="stat-box reveal"><div class="num"><span data-count="3">0</span></div><div class="lbl">Аудитов безопасности</div></div>
           </div>
         </section>
 
         <section class="section" style="padding-bottom:8px" id="start">
-          <div class="cta reveal">
-            <h2>Build with USD bloom</h2>
-            <p>Grab your sandbox keys and start integrating in minutes — no sales call required.</p>
-            <form data-mock style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;max-width:440px;margin:0 auto">
-              <input type="email" name="email" required placeholder="dev@you.dev" aria-label="Email" style="flex:1;min-width:200px;padding:15px 20px;border-radius:100px;border:1px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.08);color:#fff;font-size:15px" />
-              <button type="submit" class="btn btn-light">Get API keys</button>
-              <p class="form-note" role="status" aria-live="polite" style="flex-basis:100%;margin-top:6px;color:#cfc9ef;font-size:14px"></p>
+          <div class="cta reveal-scale">
+            <h2>Создавайте на USD Bloom</h2>
+            <p>Получите ключи для песочницы и начните интеграцию за минуты — без звонков с отделом продаж.</p>
+            <form data-mock style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;max-width:460px;margin:0 auto">
+              <input type="email" name="email" required placeholder="dev@you.dev" aria-label="Электронная почта" style="flex:1;min-width:200px;padding:15px 20px;border-radius:100px;border:1px solid rgba(169,156,240,0.24);background:rgba(169,156,240,0.08);color:#efecfb;font-size:15px" />
+              <button type="submit" class="btn btn-dark">Получить API-ключи</button>
+              <p class="form-note" role="status" aria-live="polite" style="flex-basis:100%;margin-top:6px;color:#a49dce;font-size:14px"></p>
             </form>
           </div>
         </section>
@@ -138,17 +139,17 @@ console.log(b.apy); <span class="c-com">// 8.4</span></div>
   </div>
 
   <footer class="footer">
-    <img class="footer-arch" src="images/arch-glow.png" alt="" aria-hidden="true" />
+    <img class="footer-arch" src="images/arch-dark.png" alt="" aria-hidden="true" />
     <div class="footer-inner">
       <a href="index.html" class="footer-brand"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1.5c.9 6 3.6 8.6 9.6 9.6-6 1-8.7 3.6-9.6 9.6-.9-6-3.6-8.6-9.6-9.6 6-1 8.7-3.6 9.6-9.6Z"/></svg> BloomFi</a>
-      <p class="footer-tag">Where money grows.</p>
-      <nav class="footer-nav" aria-label="Footer">
-        <a href="index.html">USD bloom</a>
-        <a href="business.html">Business</a>
-        <a href="treasury.html">Treasury</a>
-        <a href="developers.html">Developers</a>
+      <p class="footer-tag reveal-scale">Место, где деньги растут.</p>
+      <nav class="footer-nav" aria-label="Навигация в подвале">
+        <a href="index.html">USD Bloom</a>
+        <a href="business.html">Бизнес</a>
+        <a href="treasury.html">Казначейство</a>
+        <a href="developers.html">Разработчикам</a>
       </nav>
-      <div class="footer-bottom"><span>© 2026 BloomFi. All rights reserved.</span><span>·</span><a href="#">Privacy</a><a href="#">Terms</a></div>
+      <div class="footer-bottom"><span>© 2026 BloomFi. Все права защищены.</span><span>·</span><a href="#">Конфиденциальность</a><a href="#">Условия</a></div>
     </div>
   </footer>
 
