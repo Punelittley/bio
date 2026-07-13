@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#0c0820" />
-  <title>BloomFi — Место, где деньги растут</title>
-  <meta name="description" content="USD Bloom — программируемый доходный стейблкоин для естественного накопления стоимости и бесшовной интеграции в DeFi." />
+  <meta name="theme-color" content="#0a0d14" />
+  <title>Koma Studio — сайты для бизнеса, которые работают на результат</title>
+  <meta name="description" content="Веб-студия полного цикла. Создаём корпоративные сайты, интернет-магазины и веб-сервисы для предприятий — от стратегии и дизайна до разработки и поддержки." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" />
@@ -25,22 +25,22 @@
   <!-- ============ Header ============ -->
   <header class="site-header">
     <div class="header-inner">
-      <a href="index.html" class="brand" aria-label="BloomFi — на главную">
-        <svg class="brand-mark" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1.5c.9 6 3.6 8.6 9.6 9.6-6 1-8.7 3.6-9.6 9.6-.9-6-3.6-8.6-9.6-9.6 6-1 8.7-3.6 9.6-9.6Z"/></svg>
-        BloomFi
+      <a href="#top" class="brand" aria-label="Koma Studio — на главную">
+        <svg class="brand-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v14H4z"/><path d="M4 9h16"/><path d="M8 5v4"/></svg>
+        Koma Studio
       </a>
       <nav class="main-nav" aria-label="Основная навигация">
-        <a href="index.html" class="active">USD Bloom</a>
-        <a href="business.html">Бизнес</a>
-        <a href="treasury.html">Казначейство</a>
-        <a href="developers.html">Разработчикам</a>
+        <a href="#services">Услуги</a>
+        <a href="#works">Работы</a>
+        <a href="#process">Процесс</a>
+        <a href="#contact">Контакты</a>
       </nav>
       <div class="header-actions">
         <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
           <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
           <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M19.1 4.9l-1.8 1.8M6.7 17.3l-1.8 1.8"/></svg>
         </button>
-        <a href="business.html" class="btn btn-dark btn-sm header-cta">Запустить BETA</a>
+        <a href="#contact" class="btn btn-dark btn-sm header-cta">Обсудить проект</a>
         <button class="header-burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
           <span></span><span></span>
         </button>
@@ -50,196 +50,319 @@
 
   <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
     <nav aria-label="Мобильная навигация">
-      <a href="index.html">USD Bloom</a>
-      <a href="business.html">Бизнес</a>
-      <a href="treasury.html">Казначейство</a>
-      <a href="developers.html">Разработчикам</a>
+      <a href="#services">Услуги</a>
+      <a href="#works">Работы</a>
+      <a href="#process">Процесс</a>
+      <a href="#contact">Контакты</a>
     </nav>
   </div>
 
-  <div class="shell">
+  <div class="shell" id="top">
     <main class="page">
       <!-- ============ Hero ============ -->
       <section class="hero">
         <span class="hero-orb o1" aria-hidden="true"></span>
         <span class="hero-orb o2" aria-hidden="true"></span>
         <span class="hero-badge reveal-scale">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1.5c.9 6 3.6 8.6 9.6 9.6-6 1-8.7 3.6-9.6 9.6-.9-6-3.6-8.6-9.6-9.6 6-1 8.7-3.6 9.6-9.6Z"/></svg>
-          Доходный стейблкоин нового поколения
+          <span class="dot" aria-hidden="true"></span>
+          Веб-студия для бизнеса
         </span>
-        <h1 class="reveal">Место, где деньги растут</h1>
-        <p class="lead reveal">Программируемый, ориентированный на пользу стабильный токен, созданный для естественного накопления стоимости и бесшовной интеграции в DeFi.</p>
+        <h1 class="reveal">Создаём сайты для предприятий,<br />которые <span class="accent">работают на результат</span></h1>
+        <p class="lead reveal">Корпоративные сайты, интернет-магазины и веб-сервисы полного цикла — от стратегии и дизайна до разработки, запуска и поддержки. Строго, надёжно, в срок.</p>
         <div class="hero-actions reveal">
-          <a href="business.html" class="btn btn-dark">Попробовать</a>
-          <a href="#how" class="btn btn-light">Как это работает</a>
+          <a href="#works" class="btn btn-dark">Смотреть работы</a>
+          <a href="#contact" class="btn btn-light">Обсудить проект</a>
         </div>
-        <img class="hero-img reveal-scale" data-parallax data-img-light="images/hero-coins.png" data-img-dark="images/hero-dark.png" src="images/hero-dark.png" alt="Серебристые монеты, поднимающиеся из поля фиолетовых цветов" />
+        <div class="hero-metrics reveal">
+          <div class="hero-metric"><div class="m-num"><span data-count="80" data-suffix="+">0</span></div><div class="m-lbl">проектов сдано</div></div>
+          <div class="hero-metric"><div class="m-num"><span data-count="7" data-suffix=" лет">0</span></div><div class="m-lbl">на рынке</div></div>
+          <div class="hero-metric"><div class="m-num"><span data-count="40" data-suffix="+">0</span></div><div class="m-lbl">компаний-клиентов</div></div>
+        </div>
+        <img class="hero-img reveal-scale" data-parallax src="images/hero-studio.png" alt="Ноутбук и смартфон с примерами корпоративных сайтов" />
       </section>
 
-      <!-- ============ Marquee backers ============ -->
+      <!-- ============ Marquee clients ============ -->
       <section class="section" style="padding-block:clamp(40px,5vw,64px)">
         <div class="marquee reveal">
-          <span class="marquee-label">При поддержке лучших компаний и дальновидных инвесторов</span>
+          <span class="marquee-label">Нам доверяют компании из разных отраслей</span>
           <div class="marquee-track">
-            <span>Fundamental Labs</span><span>KuCoin</span><span>NGC Ventures</span><span>N×Gen</span><span>Matter Labs</span><span>DEXTools</span><span>NGRAVE</span>
-            <span>Fundamental Labs</span><span>KuCoin</span><span>NGC Ventures</span><span>N×Gen</span><span>Matter Labs</span><span>DEXTools</span><span>NGRAVE</span>
+            <span>ТрансЛогистик</span><span>СтальПром</span><span>ГрадСтрой</span><span>МедЦентр Плюс</span><span>Финправо</span><span>ТехМаркет</span><span>АгроХолдинг</span>
+            <span>ТрансЛогистик</span><span>СтальПром</span><span>ГрадСтрой</span><span>МедЦентр Плюс</span><span>Финправо</span><span>ТехМаркет</span><span>АгроХолдинг</span>
           </div>
         </div>
       </section>
 
-      <!-- ============ What is (split) ============ -->
+      <!-- ============ Intro (split) ============ -->
       <section class="section" id="about" style="padding-top:0">
         <div class="split">
           <div class="reveal-left">
-            <p class="eyebrow">Что такое USD Bloom</p>
-            <h2 class="h2">Стейблкоин, который работает,<br />пока вы отдыхаете</h2>
-            <a href="#how" class="btn btn-dark btn-sm" style="margin-top:24px">Узнать больше</a>
+            <p class="eyebrow">О студии</p>
+            <h2 class="h2">Сайт как рабочий<br />инструмент бизнеса</h2>
+            <a href="#services" class="btn btn-dark btn-sm" style="margin-top:24px">Что мы делаем</a>
           </div>
-          <p class="lead-copy reveal-right">USD Bloom — это <b>доходный стейблкоин</b>, который помогает вашему капиталу расти, оставаясь надёжно привязанным к доллару США.</p>
+          <p class="split lead-copy reveal-right" style="display:block">Мы проектируем и разрабатываем сайты, которые <b>приводят клиентов и упрощают процессы</b> — с продуманной структурой, чистым кодом и вниманием к деталям. Без шаблонов и лишнего.</p>
         </div>
       </section>
 
-      <!-- ============ Bento features ============ -->
-      <section class="section" id="features" style="padding-top:0">
-        <div class="bento">
-          <article class="bento-card b-feature b-wide reveal-scale">
-            <div>
-              <h3>Растущий капитал</h3>
-              <p>Получайте пассивный доход, пока стейблкоины работают в высокодоходных DeFi-протоколах.</p>
+      <!-- ============ Services ============ -->
+      <section class="section" id="services" style="padding-top:0">
+        <div class="section-head">
+          <p class="eyebrow">Услуги</p>
+          <h2 class="h2">Что мы создаём</h2>
+          <p class="section-lead">Полный цикл веб-разработки под задачи предприятия — от первого экрана до интеграций с вашими системами.</p>
+        </div>
+        <div class="services">
+          <article class="service-card reveal">
+            <span class="service-num">01</span>
+            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 8h18M7 4v4"/></svg></div>
+            <h3>Корпоративные сайты</h3>
+            <p>Представительские сайты компаний с понятной структурой, каталогом услуг и заявками.</p>
+            <ul><li>Многостраничные</li><li>Каталоги</li><li>Формы</li></ul>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-num">02</span>
+            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.4 12.5a2 2 0 0 0 2 1.5h7.7a2 2 0 0 0 2-1.6L22 7H6"/></svg></div>
+            <h3>Интернет-магазины</h3>
+            <p>Электронная коммерция с корзиной, оплатой и интеграцией с 1С и складом.</p>
+            <ul><li>B2B и B2C</li><li>Оплата</li><li>1С / CRM</li></ul>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-num">03</span>
+            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v12H4z"/><path d="M2 20h20"/><path d="M9 12l2 2 4-4"/></svg></div>
+            <h3>Веб-сервисы и порталы</h3>
+            <p>Личные кабинеты, дашборды и внутренние системы для автоматизации процессов.</p>
+            <ul><li>Дашборды</li><li>Кабинеты</li><li>API</li></ul>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-num">04</span>
+            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 5 5.6.8-4 4 1 5.6L12 20l-5 2.4 1-5.6-4-4 5.6-.8z"/></svg></div>
+            <h3>Лендинги</h3>
+            <p>Продающие одностраничные сайты под конкретный продукт, услугу или акцию.</p>
+            <ul><li>Быстрый запуск</li><li>A/B</li><li>Аналитика</li></ul>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-num">05</span>
+            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20v-6M12 14l-4 4M12 14l4 4"/><path d="M20 16a4 4 0 0 0-1.3-7.8A6 6 0 0 0 6.5 8 4.5 4.5 0 0 0 5 16"/></svg></div>
+            <h3>Редизайн и переезд</h3>
+            <p>Обновляем устаревшие сайты, ускоряем и переносим на современный стек.</p>
+            <ul><li>Аудит</li><li>Скорость</li><li>SEO</li></ul>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-num">06</span>
+            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 6v6l4 2"/></svg></div>
+            <h3>Поддержка и развитие</h3>
+            <p>Сопровождаем проект после запуска: правки, обновления, мониторинг и рост.</p>
+            <ul><li>SLA</li><li>Обновления</li><li>Мониторинг</li></ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- ============ Portfolio ============ -->
+      <section class="section" id="works" style="padding-top:0">
+        <div class="section-head">
+          <p class="eyebrow">Работы</p>
+          <h2 class="h2">Примеры наших проектов</h2>
+          <p class="section-lead">Реальные сайты, которые мы создали для предприятий. Нажмите на карточку — откроется проект.</p>
+        </div>
+        <div class="portfolio-grid">
+          <a class="work reveal" href="https://example.com/translogistic" target="_blank" rel="noopener" aria-label="Открыть проект ТрансЛогистик">
+            <div class="work-media">
+              <span class="work-tag">Логистика</span>
+              <span class="work-open" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+              <img src="images/work-logistics.png" alt="Сайт логистической компании ТрансЛогистик" />
             </div>
-            <img class="bento-img" src="images/flower-coin.png" alt="" />
-          </article>
-          <article class="bento-card b-accent b-sm reveal-left">
-            <h3>Всегда ликвидно, всегда стабильно</h3>
-            <p>Полная привязка к доллару и мгновенный доступ — без блокировок и задержек.</p>
-          </article>
-          <article class="bento-card b-outline b-sm reveal-right">
-            <div class="bento-kpi">100%</div>
-            <p>Без вашего участия — USD Bloom работает в фоне за вас.</p>
-          </article>
-          <article class="bento-card b-outline b-sm reveal-left">
-            <div class="bento-kpi">8.4%</div>
-            <p>Средняя годовая доходность по протоколу.</p>
-          </article>
-          <article class="bento-card b-accent b-sm reveal-right">
-            <h3>Прозрачность ончейн</h3>
-            <p>Каждая операция видна в блокчейне и проверяется в реальном времени.</p>
-          </article>
+            <div class="work-body">
+              <h3>ТрансЛогистик</h3>
+              <p>Корпоративный сайт транспортной компании с расчётом стоимости доставки и отслеживанием грузов.</p>
+              <div class="work-meta">
+                <span>Корпоративный сайт</span>
+                <span class="url"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg>Открыть сайт</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="work reveal" href="https://example.com/stalprom" target="_blank" rel="noopener" aria-label="Открыть проект СтальПром">
+            <div class="work-media">
+              <span class="work-tag">Производство</span>
+              <span class="work-open" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+              <img src="images/work-industrial.png" alt="Сайт производственного предприятия СтальПром" />
+            </div>
+            <div class="work-body">
+              <h3>СтальПром</h3>
+              <p>Сайт-каталог производителя металлоконструкций с фильтрами по продукции и заявками на расчёт.</p>
+              <div class="work-meta">
+                <span>Каталог</span>
+                <span class="url"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg>Открыть сайт</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="work reveal" href="https://example.com/gradstroy" target="_blank" rel="noopener" aria-label="Открыть проект ГрадСтрой">
+            <div class="work-media">
+              <span class="work-tag">Строительство</span>
+              <span class="work-open" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+              <img src="images/work-construction.png" alt="Сайт строительной компании ГрадСтрой" />
+            </div>
+            <div class="work-body">
+              <h3>ГрадСтрой</h3>
+              <p>Сайт девелопера с портфолио объектов, галереей и формой подбора коммерческих площадей.</p>
+              <div class="work-meta">
+                <span>Корпоративный сайт</span>
+                <span class="url"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg>Открыть сайт</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="work reveal" href="https://example.com/medcenter" target="_blank" rel="noopener" aria-label="Открыть проект МедЦентр Плюс">
+            <div class="work-media">
+              <span class="work-tag">Медицина</span>
+              <span class="work-open" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+              <img src="images/work-medical.png" alt="Сайт медицинской клиники МедЦентр Плюс" />
+            </div>
+            <div class="work-body">
+              <h3>МедЦентр Плюс</h3>
+              <p>Сайт клиники с онлайн-записью, расписанием врачей и разделом услуг с ценами.</p>
+              <div class="work-meta">
+                <span>Сайт + запись</span>
+                <span class="url"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg>Открыть сайт</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="work reveal" href="https://example.com/finpravo" target="_blank" rel="noopener" aria-label="Открыть проект Финправо">
+            <div class="work-media">
+              <span class="work-tag">Финансы и право</span>
+              <span class="work-open" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+              <img src="images/work-finance.png" alt="Сайт финансово-юридической компании Финправо" />
+            </div>
+            <div class="work-body">
+              <h3>Финправо</h3>
+              <p>Представительский сайт B2B-консалтинга с описанием услуг, кейсами и заявкой на консультацию.</p>
+              <div class="work-meta">
+                <span>Корпоративный сайт</span>
+                <span class="url"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg>Открыть сайт</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="work reveal" href="https://example.com/tehmarket" target="_blank" rel="noopener" aria-label="Открыть проект ТехМаркет">
+            <div class="work-media">
+              <span class="work-tag">E-commerce</span>
+              <span class="work-open" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+              <img src="images/work-shop.png" alt="Интернет-магазин оборудования ТехМаркет" />
+            </div>
+            <div class="work-body">
+              <h3>ТехМаркет</h3>
+              <p>B2B-магазин промышленного оборудования с личным кабинетом, оптовыми ценами и интеграцией с 1С.</p>
+              <div class="work-meta">
+                <span>Интернет-магазин</span>
+                <span class="url"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg>Открыть сайт</span>
+              </div>
+            </div>
+          </a>
         </div>
       </section>
 
-      <!-- ============ How it works — steps ============ -->
-      <section class="section" id="how">
-        <div style="text-align:center;max-width:640px;margin:0 auto 8px">
-          <p class="eyebrow" style="justify-content:center">Как это работает</p>
-          <h2 class="h2">Три шага до доходности</h2>
-          <p class="section-lead" style="margin-inline:auto">Никаких сложных стратегий. Внесите средства — остальное BloomFi сделает автоматически.</p>
+      <!-- ============ Process ============ -->
+      <section class="section" id="process">
+        <div class="section-head center">
+          <p class="eyebrow">Процесс</p>
+          <h2 class="h2">Как мы работаем</h2>
+          <p class="section-lead">Прозрачный процесс с фиксированными этапами и результатом на каждом шаге.</p>
         </div>
         <div class="steps">
           <div class="step reveal">
             <div class="step-node">1</div>
-            <h3>Внесите USD Bloom</h3>
-            <p>Пополните баланс за секунды с любого кошелька или платформы.</p>
+            <h3>Бриф и анализ</h3>
+            <p>Погружаемся в задачу, изучаем нишу и конкурентов, формируем структуру.</p>
           </div>
           <div class="step reveal">
             <div class="step-node">2</div>
-            <h3>Средства работают</h3>
-            <p>Капитал автоматически распределяется по проверенным DeFi-протоколам.</p>
+            <h3>Дизайн</h3>
+            <p>Проектируем прототип и создаём фирменный дизайн под ваш бренд.</p>
           </div>
           <div class="step reveal">
             <div class="step-node">3</div>
-            <h3>Получайте доход</h3>
-            <p>Доходность начисляется на баланс ежедневно и всегда доступна к выводу.</p>
+            <h3>Разработка</h3>
+            <p>Верстаем, программируем и подключаем нужные интеграции и системы.</p>
           </div>
-        </div>
-      </section>
-
-      <!-- ============ Retention ============ -->
-      <section class="section" style="padding-top:0">
-        <div class="retention reveal-scale">
-          <div class="retention-head">
-            <p class="eyebrow">Почему команды выбирают Bloom</p>
-            <h2 class="h2">Удержание, которое растёт как сложный процент</h2>
-            <p>Дайте пользователям причину держать средства на вашей платформе. Доходность увеличивает балансы, а балансы — вовлечённость.</p>
+          <div class="step reveal">
+            <div class="step-node">4</div>
+            <h3>Запуск и рост</h3>
+            <p>Публикуем, обучаем вашу команду и сопровождаем проект после запуска.</p>
           </div>
-          <div class="retention-stats">
-            <div class="ret-stat reveal"><div class="num"><span data-count="3.2" data-suffix="x">0</span></div><div class="lbl">Выше удержание</div></div>
-            <div class="ret-stat reveal"><div class="num"><span data-count="8.4" data-suffix="%">0</span></div><div class="lbl">Сквозной APY</div></div>
-            <div class="ret-stat reveal"><div class="num"><span data-count="24" data-suffix="ч">0</span></div><div class="lbl">На интеграцию</div></div>
-            <div class="ret-stat reveal"><div class="num"><span data-count="0">0</span></div><div class="lbl">Блокировок</div></div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ============ Use cases ============ -->
-      <section class="section" style="padding-top:0">
-        <div class="usecase">
-          <div class="usecase-copy reveal-left">
-            <p class="eyebrow">USD Bloom в деле</p>
-            <h2 class="h2">Сценарии использования</h2>
-            <p>Разнообразные сценарии для разработчиков, бизнеса и казначейств, которым нужны безопасные и прибыльные интеграции стейблкоина.</p>
-            <div class="uc-tabs">
-              <a href="business.html" class="btn btn-light btn-sm">Бизнес</a>
-              <a href="treasury.html" class="btn btn-light btn-sm">Казначейство</a>
-              <a href="developers.html" class="btn btn-light btn-sm">Разработчикам</a>
-            </div>
-          </div>
-          <article class="uc-card reveal-right">
-            <h3>Бизнес</h3>
-            <p>Повышайте вовлечённость, предлагая USD Bloom — надёжный обеспеченный фиатом стейблкоин с высокой доходностью, чтобы клиенты зарабатывали без усилий прямо на вашей платформе.</p>
-            <a href="business.html" class="uc-link">
-              <span class="btn-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
-              Подробнее
-            </a>
-            <img class="uc-img" src="images/temple.png" alt="Лавандовый стеклянный банк-храм среди фиолетовых цветов" />
-          </article>
         </div>
       </section>
 
       <!-- ============ Stats ============ -->
       <section class="section" style="padding-top:0">
-        <div class="stat-band">
-          <div class="stat-box reveal"><div class="num"><span data-count="8.4" data-suffix="%">0</span></div><div class="lbl">Средний APY</div></div>
-          <div class="stat-box reveal"><div class="num"><span data-count="1" data-prefix="$" data-suffix=" млрд+">0</span></div><div class="lbl">Активов защищено</div></div>
-          <div class="stat-box reveal"><div class="num"><span data-count="120" data-suffix="k">0</span></div><div class="lbl">Активных кошельков</div></div>
-          <div class="stat-box reveal"><div class="num"><span data-count="40" data-suffix="+">0</span></div><div class="lbl">DeFi-интеграций</div></div>
+        <div class="stat-band reveal-scale">
+          <div class="stat-box"><div class="num"><span data-count="80" data-suffix="+">0</span></div><div class="lbl">Проектов запущено</div></div>
+          <div class="stat-box"><div class="num"><span data-count="7" data-suffix=" лет">0</span></div><div class="lbl">Опыт студии</div></div>
+          <div class="stat-box"><div class="num"><span data-count="98" data-suffix="%">0</span></div><div class="lbl">Сдаём в срок</div></div>
+          <div class="stat-box"><div class="num"><span data-count="40" data-suffix="+">0</span></div><div class="lbl">Довольных клиентов</div></div>
+        </div>
+      </section>
+
+      <!-- ============ Why us ============ -->
+      <section class="section" style="padding-top:0">
+        <div class="section-head">
+          <p class="eyebrow">Почему мы</p>
+          <h2 class="h2">Строго, надёжно, по делу</h2>
+        </div>
+        <div class="why">
+          <article class="why-card reveal">
+            <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 8.5 8 11 4.6-2.5 8-6 8-11V5z"/><path d="M9 12l2 2 4-4"/></svg></div>
+            <h3>Договор и сроки</h3>
+            <p>Работаем официально, с ТЗ и фиксированными этапами. Вы всегда знаете, что и когда получите.</p>
+          </article>
+          <article class="why-card reveal">
+            <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7z"/></svg></div>
+            <h3>Скорость и качество</h3>
+            <p>Чистый код, высокая производительность и внимание к деталям на каждой странице.</p>
+          </article>
+          <article class="why-card reveal">
+            <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg></div>
+            <h3>Результат для бизнеса</h3>
+            <p>Проектируем сайты под заявки и продажи, а не «чтобы был». Смотрим на цифры.</p>
+          </article>
         </div>
       </section>
 
       <!-- ============ FAQ ============ -->
       <section class="section" id="faq">
-        <div style="text-align:center;max-width:640px;margin:0 auto 8px">
-          <p class="eyebrow" style="justify-content:center">Вопросы и ответы</p>
-          <h2 class="h2">Часто спрашивают</h2>
+        <div class="section-head center">
+          <p class="eyebrow">Вопросы</p>
+          <h2 class="h2">Частые вопросы</h2>
         </div>
         <div class="faq">
           <details class="faq-item reveal" open>
-            <summary>Как USD Bloom сохраняет привязку к доллару?<span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span></summary>
-            <div class="faq-body">Резервы полностью обеспечены фиатом и краткосрочными инструментами, а привязка поддерживается ончейн-механизмами арбитража и мгновенного погашения.</div>
+            <summary>Сколько стоит сайт?<span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+            <div class="faq-body">Стоимость зависит от задач и объёма. Лендинг, корпоративный сайт и интернет-магазин считаются по-разному. После брифа мы присылаем прозрачную смету с этапами.</div>
           </details>
           <details class="faq-item reveal">
-            <summary>Откуда берётся доходность?<span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span></summary>
-            <div class="faq-body">Средства распределяются по проверенным DeFi-протоколам и стратегиям управления ликвидностью, а начисленный доход автоматически отражается на вашем балансе.</div>
+            <summary>Сколько времени занимает разработка?<span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+            <div class="faq-body">Лендинг — от 1–2 недель, корпоративный сайт — 3–6 недель, интернет-магазин или сервис — от 1,5 месяцев. Точные сроки фиксируем в договоре.</div>
           </details>
           <details class="faq-item reveal">
-            <summary>Есть ли блокировки или период вывода?<span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span></summary>
-            <div class="faq-body">Нет. Средства всегда ликвидны — выводите любую сумму в любой момент без задержек и штрафов.</div>
+            <summary>Делаете ли вы интеграции с 1С и CRM?<span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+            <div class="faq-body">Да. Подключаем 1С, CRM, платёжные системы, telephony и другие сервисы — синхронизируем каталог, заявки и заказы с вашими системами.</div>
           </details>
           <details class="faq-item reveal">
-            <summary>Сколько времени занимает интеграция?<span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span></summary>
-            <div class="faq-body">Базовая интеграция SDK занимает около 24 часов. Подробную документацию вы найдёте в разделе «Разработчикам».</div>
+            <summary>Что после запуска?<span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+            <div class="faq-body">Обучаем вашу команду работе с сайтом и предлагаем поддержку по SLA: правки, обновления, мониторинг и дальнейшее развитие проекта.</div>
           </details>
         </div>
       </section>
 
-      <!-- ============ CTA ============ -->
-      <section class="section" style="padding-bottom:8px">
+      <!-- ============ CTA / Contact ============ -->
+      <section class="section" id="contact" style="padding-bottom:8px">
         <div class="cta reveal-scale">
-          <h2>Позвольте деньгам<br />расцвести</h2>
-          <p>Присоединяйтесь к бете и заставьте свои стейблкоины работать с нативной, автоматической ончейн-доходностью.</p>
+          <h2>Обсудим ваш проект?</h2>
+          <p>Оставьте почту — вернёмся с вопросами по задаче и предложим решение. Или напишите нам в Telegram: @kate_koma.</p>
           <form class="newsletter" data-mock>
-            <input type="email" name="email" required placeholder="you@email.com" aria-label="Электронная почта" />
-            <button type="submit" class="btn btn-dark">В бету</button>
+            <input type="email" name="email" required placeholder="you@company.ru" aria-label="Электронная почта" />
+            <button type="submit" class="btn btn-dark">Отправить заявку</button>
             <p class="form-note" role="status" aria-live="polite"></p>
           </form>
         </div>
@@ -251,22 +374,21 @@
   <footer class="footer">
     <img class="footer-arch" data-img-light="images/arch-glow.png" data-img-dark="images/arch-dark.png" src="images/arch-dark.png" alt="" aria-hidden="true" />
     <div class="footer-inner">
-      <a href="index.html" class="footer-brand">
-        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1.5c.9 6 3.6 8.6 9.6 9.6-6 1-8.7 3.6-9.6 9.6-.9-6-3.6-8.6-9.6-9.6 6-1 8.7-3.6 9.6-9.6Z"/></svg>
-        BloomFi
+      <a href="#top" class="footer-brand">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v14H4z"/><path d="M4 9h16"/><path d="M8 5v4"/></svg>
+        Koma Studio
       </a>
-      <p class="footer-tag reveal-scale">Место, где деньги растут.</p>
+      <p class="footer-tag reveal-scale">Создаём сайты для бизнеса, которые работают на результат.</p>
       <nav class="footer-nav" aria-label="Навигация в подвале">
-        <a href="index.html">USD Bloom</a>
-        <a href="business.html">Бизнес</a>
-        <a href="treasury.html">Казначейство</a>
-        <a href="developers.html">Разработчикам</a>
+        <a href="#services">Услуги</a>
+        <a href="#works">Работы</a>
+        <a href="#process">Процесс</a>
+        <a href="#contact">Контакты</a>
       </nav>
       <div class="footer-bottom">
-        <span>© 2026 BloomFi. Все права защищены.</span>
+        <span>© 2026 Koma Studio. Все права защищены.</span>
         <span>·</span>
-        <a href="#">Конфиденциальность</a>
-        <a href="#">Условия</a>
+        <a href="https://t.me/kate_koma" target="_blank" rel="noopener">Telegram: @kate_koma</a>
       </div>
     </div>
   </footer>
