@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#dcd8ee" />
+  <title>BloomFi — Treasury</title>
+  <meta name="description" content="Put idle treasury reserves to work with USD bloom — transparent, liquid, and dollar-pegged yield for DAOs and companies." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <canvas id="stars" aria-hidden="true"></canvas>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand" aria-label="BloomFi home">
+        <svg class="brand-mark" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1.5c.9 6 3.6 8.6 9.6 9.6-6 1-8.7 3.6-9.6 9.6-.9-6-3.6-8.6-9.6-9.6 6-1 8.7-3.6 9.6-9.6Z"/></svg>
+        BloomFi
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="index.html">USD bloom</a>
+        <a href="business.html">Business</a>
+        <a href="treasury.html" class="active">Treasury</a>
+        <a href="developers.html">Developers</a>
+      </nav>
+      <a href="#start" class="btn btn-dark btn-sm header-cta">Launch BETA</a>
+      <button class="header-burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav aria-label="Mobile">
+      <a href="index.html">USD bloom</a>
+      <a href="business.html">Business</a>
+      <a href="treasury.html">Treasury</a>
+      <a href="developers.html">Developers</a>
+    </nav>
+  </div>
+
+  <div class="shell">
+    <div class="panel">
+      <main class="page">
+        <section class="page-hero">
+          <p class="eyebrow reveal">For Treasuries</p>
+          <h1 class="reveal">Idle reserves,<br />finally productive</h1>
+          <p class="reveal">Put your DAO or company treasury to work with USD bloom — transparent, always liquid, and pegged to the dollar so you never trade safety for yield.</p>
+          <div class="reveal" style="margin-top:26px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+            <a href="#start" class="btn btn-dark">Talk to us</a>
+            <a href="developers.html" class="btn btn-ghost">Read the docs</a>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="feature-grid" style="grid-template-columns:1fr 1fr 1fr">
+            <article class="f-card f-dark reveal">
+              <h3>Fully liquid</h3>
+              <p>Withdraw any portion at any time. No lockups, no unbonding periods, no surprises.</p>
+            </article>
+            <article class="f-card f-dark reveal">
+              <h3>On-chain proof</h3>
+              <p>Every reserve is verifiable on-chain with continuous attestations you can audit yourself.</p>
+            </article>
+            <article class="f-card f-light reveal">
+              <h3>Dollar-pegged</h3>
+              <p style="max-width:220px">Grow your balance while staying 1:1 with USD — stability first, yield second.</p>
+              <img class="f-card-img" src="images/flower-coin.png" alt="" />
+            </article>
+          </div>
+        </section>
+
+        <section class="section" style="padding-top:0">
+          <div class="stat-band">
+            <div class="stat-box reveal"><div class="num"><span data-count="8.4" data-suffix="%">0</span></div><div class="lbl">Target APY</div></div>
+            <div class="stat-box reveal"><div class="num"><span data-count="100" data-suffix="%">0</span></div><div class="lbl">Reserve backed</div></div>
+            <div class="stat-box reveal"><div class="num"><span data-count="0">0</span></div><div class="lbl">Lockup days</div></div>
+            <div class="stat-box reveal"><div class="num"><span data-count="24" data-suffix="/7">0</span></div><div class="lbl">Redemptions</div></div>
+          </div>
+        </section>
+
+        <section class="section" style="padding-top:0">
+          <div class="split">
+            <div class="reveal">
+              <p class="eyebrow">How it works</p>
+              <h2 class="h2">Deposit,<br />grow, redeem</h2>
+            </div>
+            <div class="reveal" style="display:flex;flex-direction:column;gap:14px">
+              <div class="info-card"><h3>1 · Deposit stablecoins</h3><p>Move USDC or USDT into USD bloom from any supported chain in a single transaction.</p></div>
+              <div class="info-card"><h3>2 · Earn automatically</h3><p>Reserves are deployed across vetted, high-performing DeFi strategies — hands-free.</p></div>
+              <div class="info-card"><h3>3 · Redeem anytime</h3><p>Burn USD bloom back to dollars instantly, whenever your treasury needs liquidity.</p></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" style="padding-bottom:8px" id="start">
+          <div class="cta reveal">
+            <h2>Grow your treasury</h2>
+            <p>Book a walkthrough with our team and see how USD bloom fits your reserve policy.</p>
+            <form data-mock style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;max-width:440px;margin:0 auto">
+              <input type="email" name="email" required placeholder="treasury@org.xyz" aria-label="Email" style="flex:1;min-width:200px;padding:15px 20px;border-radius:100px;border:1px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.08);color:#fff;font-size:15px" />
+              <button type="submit" class="btn btn-light">Book a call</button>
+              <p class="form-note" role="status" aria-live="polite" style="flex-basis:100%;margin-top:6px;color:#cfc9ef;font-size:14px"></p>
+            </form>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <img class="footer-arch" src="images/arch-glow.png" alt="" aria-hidden="true" />
+    <div class="footer-inner">
+      <a href="index.html" class="footer-brand"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1.5c.9 6 3.6 8.6 9.6 9.6-6 1-8.7 3.6-9.6 9.6-.9-6-3.6-8.6-9.6-9.6 6-1 8.7-3.6 9.6-9.6Z"/></svg> BloomFi</a>
+      <p class="footer-tag">Where money grows.</p>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="index.html">USD bloom</a>
+        <a href="business.html">Business</a>
+        <a href="treasury.html">Treasury</a>
+        <a href="developers.html">Developers</a>
+      </nav>
+      <div class="footer-bottom"><span>© 2026 BloomFi. All rights reserved.</span><span>·</span><a href="#">Privacy</a><a href="#">Terms</a></div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

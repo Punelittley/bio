@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#dcd8ee" />
+  <title>BloomFi — Business</title>
+  <meta name="description" content="Boost user engagement by offering USD bloom, a secure fiat-backed stablecoin with high yields your customers can earn effortlessly." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <canvas id="stars" aria-hidden="true"></canvas>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand" aria-label="BloomFi home">
+        <svg class="brand-mark" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1.5c.9 6 3.6 8.6 9.6 9.6-6 1-8.7 3.6-9.6 9.6-.9-6-3.6-8.6-9.6-9.6 6-1 8.7-3.6 9.6-9.6Z"/></svg>
+        BloomFi
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="index.html">USD bloom</a>
+        <a href="business.html" class="active">Business</a>
+        <a href="treasury.html">Treasury</a>
+        <a href="developers.html">Developers</a>
+      </nav>
+      <a href="#start" class="btn btn-dark btn-sm header-cta">Launch BETA</a>
+      <button class="header-burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav aria-label="Mobile">
+      <a href="index.html">USD bloom</a>
+      <a href="business.html">Business</a>
+      <a href="treasury.html">Treasury</a>
+      <a href="developers.html">Developers</a>
+    </nav>
+  </div>
+
+  <div class="shell">
+    <div class="panel">
+      <main class="page">
+        <section class="page-hero">
+          <p class="eyebrow reveal">For Business</p>
+          <h1 class="reveal">Earnings, built into<br />your product</h1>
+          <p class="reveal">Boost engagement by offering USD bloom — a secure fiat-backed stablecoin with high yields, so your customers earn effortlessly on your platform.</p>
+          <div class="reveal" style="margin-top:26px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+            <a href="#start" class="btn btn-dark">Get started</a>
+            <a href="developers.html" class="btn btn-ghost">Read the docs</a>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="grid-3">
+            <article class="info-card reveal">
+              <div class="info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-6"/></svg></div>
+              <h3>Embedded yield</h3>
+              <p>Let balances earn automatically inside your app. No custody headaches, no manual strategies.</p>
+            </article>
+            <article class="info-card reveal">
+              <div class="info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18"/></svg></div>
+              <h3>White-label rails</h3>
+              <p>Ship branded wallets and payouts on top of USD bloom with a few API calls.</p>
+            </article>
+            <article class="info-card reveal">
+              <div class="info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z"/></svg></div>
+              <h3>Compliance-ready</h3>
+              <p>Fiat-backed reserves, transparent attestations, and audit-friendly reporting out of the box.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" style="padding-top:0">
+          <div class="usecase">
+            <div class="usecase-copy reveal">
+              <p class="eyebrow">Why teams choose bloom</p>
+              <h2 class="h2">Retention that<br />compounds</h2>
+              <p>Give users a reason to keep funds on your platform. Yield increases balances, balances increase engagement.</p>
+            </div>
+            <article class="uc-card reveal">
+              <div class="stat-band" style="grid-template-columns:1fr 1fr;gap:14px;flex:0 0 auto">
+                <div class="stat-box"><div class="num"><span data-count="3.2" data-suffix="x">0</span></div><div class="lbl">Higher retention</div></div>
+                <div class="stat-box"><div class="num"><span data-count="8.4" data-suffix="%">0</span></div><div class="lbl">Pass-through APY</div></div>
+                <div class="stat-box"><div class="num"><span data-count="24" data-suffix="h">0</span></div><div class="lbl">To integrate</div></div>
+                <div class="stat-box"><div class="num"><span data-count="0">0</span></div><div class="lbl">Lockups</div></div>
+              </div>
+              <img class="uc-img" src="images/temple.png" alt="Lavender glass bank temple among purple flowers" style="max-width:360px" />
+            </article>
+          </div>
+        </section>
+
+        <section class="section" style="padding-bottom:8px" id="start">
+          <div class="cta reveal">
+            <h2>Bring yield to your users</h2>
+            <p>Tell us about your platform and we will help you launch USD bloom in days, not quarters.</p>
+            <form data-mock style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;max-width:440px;margin:0 auto">
+              <input type="email" name="email" required placeholder="work@company.com" aria-label="Work email" style="flex:1;min-width:200px;padding:15px 20px;border-radius:100px;border:1px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.08);color:#fff;font-size:15px" />
+              <button type="submit" class="btn btn-light">Request access</button>
+              <p class="form-note" role="status" aria-live="polite" style="flex-basis:100%;margin-top:6px;color:#cfc9ef;font-size:14px"></p>
+            </form>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <img class="footer-arch" src="images/arch-glow.png" alt="" aria-hidden="true" />
+    <div class="footer-inner">
+      <a href="index.html" class="footer-brand"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1.5c.9 6 3.6 8.6 9.6 9.6-6 1-8.7 3.6-9.6 9.6-.9-6-3.6-8.6-9.6-9.6 6-1 8.7-3.6 9.6-9.6Z"/></svg> BloomFi</a>
+      <p class="footer-tag">Where money grows.</p>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="index.html">USD bloom</a>
+        <a href="business.html">Business</a>
+        <a href="treasury.html">Treasury</a>
+        <a href="developers.html">Developers</a>
+      </nav>
+      <div class="footer-bottom"><span>© 2026 BloomFi. All rights reserved.</span><span>·</span><a href="#">Privacy</a><a href="#">Terms</a></div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
