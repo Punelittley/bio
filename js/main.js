@@ -129,6 +129,25 @@
     });
   });
 
+  /* ---------- Portfolio filter ---------- */
+  var filterBtns = document.querySelectorAll('.filter-btn');
+  var workCards = document.querySelectorAll('#workGrid .work-card');
+
+  if (filterBtns.length && workCards.length) {
+    filterBtns.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var filter = btn.getAttribute('data-filter');
+        filterBtns.forEach(function (b) { b.classList.remove('is-active'); });
+        btn.classList.add('is-active');
+
+        workCards.forEach(function (card) {
+          var match = filter === 'all' || card.getAttribute('data-cat') === filter;
+          card.classList.toggle('is-hidden', !match);
+        });
+      });
+    });
+  }
+
   /* ---------- Contact form ---------- */
   var form = document.getElementById('contactForm');
   if (form) {

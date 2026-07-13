@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Контакты — dev.</title>
+  <meta name="description" content="Связаться со мной для обсуждения проекта: Telegram, email, соцсети. Отвечаю в течение пары часов." />
+  <meta name="theme-color" content="#0c0c0d" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;1,9..144,300;1,9..144,400&family=Inter:wght@400;450;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-follower" id="cursorFollower" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="На главную">dev<span class="accent-dot">.</span></a>
+      <nav class="nav-links" aria-label="Основная навигация">
+        <a href="index.html">Главная</a>
+        <a href="about.html">О себе</a>
+        <a href="services.html">Услуги</a>
+        <a href="portfolio.html">Работы</a>
+        <a href="contact.html" aria-current="page">Контакты</a>
+      </nav>
+      <div class="nav-right">
+        <div class="social-row">
+          <a href="https://t.me/" class="social-ico" target="_blank" rel="noopener" aria-label="Telegram"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.94 4.3 18.6 20.1c-.25 1.11-.91 1.38-1.85.86l-5.1-3.76-2.46 2.37c-.27.27-.5.5-1.02.5l.36-5.2 9.46-8.55c.41-.36-.09-.57-.64-.2L5.11 13.14l-5.03-1.57c-1.09-.34-1.11-1.09.23-1.62L20.53 2.6c.91-.34 1.71.2 1.41 1.7Z"/></svg></a>
+          <a href="https://github.com/" class="social-ico" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49l-.01-1.72c-2.78.62-3.37-1.37-3.37-1.37-.46-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.57 2.34 1.12 2.91.85.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.72 0 0 .84-.28 2.75 1.05a9.35 9.35 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9l-.01 2.82c0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg></a>
+          <a href="https://dribbble.com/" class="social-ico" target="_blank" rel="noopener" aria-label="Dribbble"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8.5 2.9c4 4.5 6 9.6 6.6 16.4M21.7 10.3c-6.5-1-12 .4-15.6 3.4M2.4 10.2c5.9.3 11.2-1 15-4.7"/></svg></a>
+          <a href="https://behance.net/" class="social-ico" target="_blank" rel="noopener" aria-label="Behance"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8.3 6.3c.9 0 1.7.08 2.4.24.7.16 1.3.42 1.7.77.5.35.8.8 1.05 1.36.24.55.36 1.23.36 2.02 0 .92-.2 1.68-.63 2.3-.42.6-1.05 1.1-1.9 1.5.94.28 1.65.75 2.12 1.42.47.67.7 1.48.7 2.42 0 .77-.15 1.43-.44 1.98-.29.55-.7 1-1.2 1.34-.5.35-1.08.6-1.72.76-.64.16-1.3.24-1.97.24H1V6.3h7.3ZM7.9 11.5c.56 0 1.02-.13 1.38-.4.36-.27.53-.7.53-1.3 0-.34-.06-.62-.18-.83a1.3 1.3 0 0 0-.5-.5 2 2 0 0 0-.72-.25 5 5 0 0 0-.85-.07H4.3v3.35h3.6Zm.2 5.6c.32 0 .62-.03.9-.1.28-.06.53-.17.74-.32.2-.15.37-.35.5-.6.12-.26.18-.58.18-.97 0-.76-.21-1.3-.64-1.63-.43-.32-1-.48-1.7-.48H4.3v4.1h3.8ZM17.5 17.2c.4.38.96.57 1.7.57.53 0 .98-.13 1.37-.4.38-.26.62-.54.7-.83h2.36c-.38 1.17-.96 2-1.74 2.5-.78.5-1.72.75-2.83.75-.77 0-1.46-.12-2.08-.37a4.3 4.3 0 0 1-1.57-1.05 4.6 4.6 0 0 1-1-1.63 6.1 6.1 0 0 1-.35-2.1c0-.75.12-1.44.36-2.08a4.86 4.86 0 0 1 2.6-2.74 5.1 5.1 0 0 1 2.05-.4c.85 0 1.6.17 2.24.5.63.32 1.15.77 1.55 1.32.4.56.7 1.2.87 1.9.17.72.23 1.47.18 2.25h-7.02c0 .8.27 1.45.68 1.84Zm2.96-4.98c-.32-.35-.83-.53-1.5-.53-.44 0-.8.08-1.1.23-.28.15-.5.33-.68.55-.17.2-.29.43-.35.66-.07.24-.1.44-.12.63h4.35c-.06-.68-.28-1.2-.6-1.57ZM15.4 7.68h5.44V9h-5.44V7.68Z"/></svg></a>
+        </div>
+        <div class="nav-divider" aria-hidden="true"></div>
+        <a href="contact.html" class="btn btn-small btn-light nav-cta">Обсудить проект</a>
+      </div>
+      <button class="nav-burger" id="burger" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav aria-label="Мобильная навигация">
+      <a href="index.html">Главная</a>
+      <a href="about.html">О себе</a>
+      <a href="services.html">Услуги</a>
+      <a href="portfolio.html">Работы</a>
+      <a href="contact.html">Контакты</a>
+    </nav>
+  </div>
+
+  <main>
+    <section class="page-hero section-dark">
+      <div class="container">
+        <p class="breadcrumb fade-up"><a href="index.html">Главная</a> — Контакты</p>
+        <h1 class="page-title fade-up">Давайте<br /><em>поговорим</em></h1>
+        <p class="lead fade-up">Расскажите о задаче — отвечу в течение пары часов и предложу оптимальное решение. Без шаблонных ответов.</p>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="container">
+        <div class="contact-layout">
+          <div class="contact-methods">
+            <a href="https://t.me/" target="_blank" rel="noopener" class="contact-method fade-up">
+              <div class="contact-method-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.94 4.3 18.6 20.1c-.25 1.11-.91 1.38-1.85.86l-5.1-3.76-2.46 2.37c-.27.27-.5.5-1.02.5l.36-5.2 9.46-8.55c.41-.36-.09-.57-.64-.2L5.11 13.14l-5.03-1.57c-1.09-.34-1.11-1.09.23-1.62L20.53 2.6c.91-.34 1.71.2 1.41 1.7Z"/></svg></div>
+              <div>
+                <h3>Telegram</h3>
+                <p>@dev_studio — самый быстрый способ связи</p>
+              </div>
+              <span class="contact-method-arrow" aria-hidden="true">→</span>
+            </a>
+            <a href="mailto:hello@dev-studio.ru" class="contact-method fade-up">
+              <div class="contact-method-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></div>
+              <div>
+                <h3>Email</h3>
+                <p>hello@dev-studio.ru</p>
+              </div>
+              <span class="contact-method-arrow" aria-hidden="true">→</span>
+            </a>
+            <a href="https://github.com/" target="_blank" rel="noopener" class="contact-method fade-up">
+              <div class="contact-method-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49l-.01-1.72c-2.78.62-3.37-1.37-3.37-1.37-.46-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.57 2.34 1.12 2.91.85.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.72 0 0 .84-.28 2.75 1.05a9.35 9.35 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9l-.01 2.82c0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg></div>
+              <div>
+                <h3>GitHub</h3>
+                <p>Открытый код и pet-проекты</p>
+              </div>
+              <span class="contact-method-arrow" aria-hidden="true">→</span>
+            </a>
+            <div class="contact-note fade-up">
+              <p><strong>Часы работы</strong><br />Пн–Пт, 10:00–19:00 (МСК)</p>
+              <p><strong>Локация</strong><br />Удалённо, по всему миру</p>
+            </div>
+          </div>
+
+          <div class="contact-form-wrap fade-up">
+            <h2 class="contact-form-title">Оставить заявку</h2>
+            <form class="contact-form contact-form-light" id="contactForm">
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="name">Ваше имя</label>
+                  <input type="text" id="name" name="name" placeholder="Иван" required autocomplete="name" />
+                </div>
+                <div class="form-field">
+                  <label for="email">Email или Telegram</label>
+                  <input type="text" id="email" name="email" placeholder="ivan@mail.ru" required />
+                </div>
+              </div>
+              <div class="form-field">
+                <label for="budget">Бюджет проекта</label>
+                <select id="budget" name="budget">
+                  <option value="">Не определён</option>
+                  <option value="30-70">30 000 – 70 000 ₽</option>
+                  <option value="70-120">70 000 – 120 000 ₽</option>
+                  <option value="120+">от 120 000 ₽</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label for="message">О проекте</label>
+                <textarea id="message" name="message" rows="4" placeholder="Расскажите, какой сайт вам нужен..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-dark btn-large" id="submitBtn">Отправить заявку</button>
+              <p class="form-success" id="formSuccess" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">dev<span class="accent-dot">.</span></a>
+          <p>Веб-разработка под ключ. Строгий дизайн, честный код и внимание к каждой детали.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Навигация</h4>
+          <a href="index.html">Главная</a>
+          <a href="about.html">О себе</a>
+          <a href="services.html">Услуги</a>
+          <a href="portfolio.html">Работы</a>
+          <a href="contact.html">Контакты</a>
+        </div>
+        <div class="footer-col">
+          <h4>Контакты</h4>
+          <a href="mailto:hello@dev-studio.ru">hello@dev-studio.ru</a>
+          <a href="https://t.me/" target="_blank" rel="noopener">Telegram</a>
+          <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://dribbble.com/" target="_blank" rel="noopener">Dribbble</a>
+          <a href="https://behance.net/" target="_blank" rel="noopener">Behance</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 dev. — Разработка сайтов. Сделано вручную.</p>
+        <div class="footer-social">
+          <a href="https://t.me/" class="social-ico" target="_blank" rel="noopener" aria-label="Telegram"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.94 4.3 18.6 20.1c-.25 1.11-.91 1.38-1.85.86l-5.1-3.76-2.46 2.37c-.27.27-.5.5-1.02.5l.36-5.2 9.46-8.55c.41-.36-.09-.57-.64-.2L5.11 13.14l-5.03-1.57c-1.09-.34-1.11-1.09.23-1.62L20.53 2.6c.91-.34 1.71.2 1.41 1.7Z"/></svg></a>
+          <a href="https://github.com/" class="social-ico" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49l-.01-1.72c-2.78.62-3.37-1.37-3.37-1.37-.46-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.57 2.34 1.12 2.91.85.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.72 0 0 .84-.28 2.75 1.05a9.35 9.35 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9l-.01 2.82c0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg></a>
+          <a href="https://dribbble.com/" class="social-ico" target="_blank" rel="noopener" aria-label="Dribbble"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8.5 2.9c4 4.5 6 9.6 6.6 16.4M21.7 10.3c-6.5-1-12 .4-15.6 3.4M2.4 10.2c5.9.3 11.2-1 15-4.7"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
